@@ -1,0 +1,188 @@
+.container3 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    /* justify-content: space-evenly; */
+   flex-direction: row;
+
+}
+.caixa-video-mario {
+    position: fixed;
+    top: 0;
+    z-index: 1; 
+    width: 100%;
+    height: 100%;
+}
+.vid111 {
+    /* position: fixed;
+    top: 0; */
+    display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    /*min-height: 100%;
+    min-width: 100%;
+     object-fit: cover; */
+}
+
+.mascara-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.695) 15%, rgba(10, 12, 16, 0.65) 50%, rgba(10, 12, 16, 0.695) 85%);
+}
+.description-banner {
+    height:100%;
+    color: #fff;
+    font-family: "Poppins", serif;
+    padding:1rem;
+    width: 55%;
+    height: auto;
+    margin-left: 3rem;
+    z-index: 2;
+    background:rgb(89, 182, 219, 0.5);
+    border-radius: 8px;
+}
+.xsss {
+    color: yellow;
+    font-size: 25px;
+}
+
+.btn-areax {
+    background: rgba(255, 4, 4, 0.5);
+    padding: 0.7rem 4rem;
+    margin-top: 25px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+}
+.btn-areax:hover {
+    background: red;
+}
+
+
+.fotos-hackers {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+    padding: 1rem;
+    gap: 4rem;
+    z-index: 2;
+}
+
+.foto-hackerb1 {
+    width: 13rem;
+    height: 12rem;
+    border-radius: 10px;
+    margin-right: 3rem;
+    z-index: 2;
+}
+
+.foto-hackerb2 {
+    width: 13rem;
+    height: 12rem;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.ethical-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ethical-certificados {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 2;
+}
+
+.foto-hackerb4 {
+    width: 19rem;
+    height: 13rem;
+    border-radius: 10px;
+    margin-right: 3rem;
+    z-index: 2;
+
+}
+
+.foto-hackerb5 {
+    width: 19rem;
+    height: 13rem;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .description-banner {
+        color: #fff;
+        font-family: "Poppins", serif;
+        margin-top: 7rem;
+        width: 70%;
+        height: auto;
+        margin-left: 1rem;
+
+    }
+
+    .fotos-hackers {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .ethical-logo {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ethical-certificados {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .foto-hackerb1 {
+        width: 310px;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .foto-hackerb4 {
+        width: 410px;
+        height: 280px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .foto-hackerb5 {
+        width: 410px;
+        height: 280px;
+        border-radius: 10px;
+
+    }
+}
