@@ -6,7 +6,8 @@
     font-family: 'poppins', sans-serif;
 }
 
-section11 {
+
+.section11 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,5 +128,7 @@ input:valid ~ label {
 .register p a:hover {
     text-decoration: underline;
 }
+
+
 
 
