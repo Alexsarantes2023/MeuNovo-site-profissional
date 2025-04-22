@@ -1,0 +1,184 @@
+
+.container3c {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    /* justify-content: space-evenly; */
+   flex-direction: row;
+
+}
+.caixa-video-mario {
+    position: fixed;
+    top: 0;
+    z-index: 0; 
+    width: 100%;
+    height: 100%;
+}
+.vid111 {
+    /* position: fixed;
+    top: 0; */
+    display: block;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    /*min-height: 100%;
+    min-width: 100%;
+     object-fit: cover; */
+}
+
+.mascara-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%); */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.695) 15%, rgba(10, 12, 16, 0.65) 50%, rgba(10, 12, 16, 0.695) 85%);
+}
+.description-bannerc {
+    width: 52%;
+    height: auto; 
+    color: #fff;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+    margin-left: 40px;
+    padding:1rem;
+    z-index: 2;
+    background:rgb(89, 182, 219, 0.5);
+    border-radius: 8px;
+}
+.xsss {
+    color: yellow;
+    font-size: 25px;
+}
+
+.btn-areax {
+    background: rgba(255, 4, 4, 0.5);
+    padding: 0.7rem 4rem;
+    margin-top: 25px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+}
+.btn-areax:hover {
+    background: red;
+}
+
+
+
+
+.fotos-hackersc {
+    width: 40%;
+    margin-top: 6rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    z-index: 1; 
+
+    & .foto-primeiro {
+        width: 100px;
+        height: 15rem;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    & .foto-hackerb1 {
+        margin-top: 2rem;
+        border-radius: 10px;
+        width: 230px;
+
+    }
+
+    & .foto-segundo {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+
+    }
+
+    & .foto-hackerb4 {
+        margin-top: 2rem;
+        border-radius: 10px;
+        width:300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .description-banner {
+        color: #fff;
+        font-family: "Poppins", serif;
+        margin-top: 8rem;
+        width: 100%;
+        height: auto;
+
+
+        & h1,
+        h3 {
+            text-align: center;
+            padding-left: 2rem;
+            padding-right: 4rem;
+
+        }
+
+        & p {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+
+
+
+    .fotos-hackers {
+        margin-top: 9rem;
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 6rem;
+
+        & .foto-primeiro {
+            width: 100%;
+            height: 15rem;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-direction: column;
+        }
+
+        & .foto-hackerb1 {
+            border-radius: 10px;
+
+        }
+
+        & .foto-segundo {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+
+        }
+
+        & .foto-hackerb4 {
+            margin-top: 10rem;
+            border-radius: 10px;
+            width: 380px;
+        }
+
+        & .foto-hackerb5 {
+            margin-top: 1rem;
+            border-radius: 10px;
+            width: 400px;
+        }
+    }
+}

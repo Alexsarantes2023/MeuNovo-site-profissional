@@ -1,0 +1,222 @@
+.termo-lgpd {
+    width: 80%;
+    height: 200px;
+    padding: 2rem 4rem .2rem;
+    margin: auto;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    overflow-y: auto;
+
+        & h2{
+            font-size:1.1rem;
+        }
+    
+}
+
+.termo-uso {
+    border-top: 2px solid rgb(17, 19, 129); 
+    width: 80%;
+    height: 200px;
+    padding: 2rem 4rem 0.2rem;
+    margin: auto;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    overflow-y: auto;
+    
+        & h2{
+            font-size:1.1rem;
+        }
+}
+
+.form-aceite,
+.contact-form {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 6rem;
+}
+
+.button-submite {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botão-aceite {
+    width: 4rem;
+    height: 2.5rem;
+    padding-top: 4rem;
+}
+
+
+
+.consent11 {
+    width: 100%;
+    font-size: var(--font-size-small);
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 1rem;
+
+}
+
+.consent2 {
+    width: 36px;
+    padding: 1rem;
+}
+
+
+.consent3 {
+    width: 36px;
+    padding: 1rem;
+}
+
+#title-form {
+font-size: 1.4rem;
+}
+
+#name,
+#email,
+#cpf,
+#senha,
+#confirmar-senha {
+    width: 95%;
+    height:45px;
+    border-radius: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-size: 1.4rem;
+    font-family: var(--font-body);
+    color: black;
+    text-shadow: rgb(33, 199, 211) 0.1em 0.1em 0.2em;
+    margin: 1rem auto 0.2rem;
+    outline: none;
+    border: none;
+}
+
+.contact-form1 {
+    width: 95%;
+    border-radius: 1rem;
+    padding: 0.8rem 0.5rem;
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 1rem auto 0.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    :root {
+        --font-size-small: 1rem;
+        --font-size-medium: 1.2rem;
+        --font-size-large: 1rem;
+        --font-size-xlarge: 1.5rem;
+        --font-size-xxlarge: 1.5rem;
+        --font-size-xxxlarge: 2.5rem;
+    }
+
+    #name,
+    #email,
+    #cpf,
+    .contact-form1 {
+        width: 95%;
+        border-radius: 1rem;
+        padding: 0.4rem 0.2rem;
+        font-size: var(-font-size-small);
+        /* border: solid 1px var(--gray-300);*/
+        font-family: var(--font-body);
+
+
+    }
+
+
+    .termo-uso {
+        width: 90%;
+         height: 200px;
+        display: flex;
+        margin-bottom: 1rem;
+        padding-top: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow-y: auto;
+       
+    }
+
+    .content-termo{
+        margin-top:auto;
+    }
+
+    .termo-lgpd {
+        width: 90%;
+        height: 200px;
+        display: flex;
+        margin-bottom: 1rem;
+        padding-top: 3rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        overflow-y: auto;
+    }
+
+    .content-lgpd {
+        margin-top:auto;
+    }
+
+    .form-aceite {
+        width: 95%;
+        height: auto;
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-top: 6rem;
+        padding-left: 0.2rem;
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+    }
+
+    .consent11 {
+        width: 100%;
+        font-size: var(--font-size-small);
+        display: flex;
+        Margin: 1rem 0;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+
+
+
+    .consent2 {
+        width: 36px;
+        padding-right: 11rem;
+    }
+
+    .consent3 {
+        width: 36px;
+        padding-right: 11rem;
+    }
+
+    .button-submite {
+        width: 80%;
+        height: auto;
+        display: flex;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,744 @@
+.container2 {
+
+    width: 100vw;
+    /*background: red;*/
+    color: #eee;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.container2 .list2 .list-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container2 .list2 .list-item img {
+    width: 100vw;
+    height: 100vh;
+    /* Faz a imagem preencher o container */
+    object-fit: cover;
+    background-position: center;
+    filter: brightness(20%);
+
+}
+
+.container2 .list2 .list-item .content2 {
+
+    position: absolute;
+    top: 7%;
+    left: 1rem;
+
+    flex-direction: column;
+    width: 98%;
+    color: #fff;
+    text-shadow: rgb(21, 61, 168) 0.1em 0.1em 0.2em;
+
+
+
+}
+
+.container2 .list2 .list-item .title {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: #d9d9d9;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 2rem 0 2rem 11rem;
+
+}
+
+.container2 .list2 .list-item .description {
+    width: 75%;
+    font-size: 1.44em;
+    color: #fff;
+    text-shadow: rgb(21, 61, 168) 0.1em 0.1em 0.2em;
+    margin: 2rem 0 2rem 11rem;
+}
+
+.container2 .list2 .list-item .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+
+
+    margin: 2rem 0 2rem 11rem;
+}
+
+.container2 .list2 .list-item .buttons button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.container2 .list2 .list-item .buttons button:hover {
+    background-color: transparent;
+    border: 1px solid #eee;
+    color: #eee;
+    transition: 0.7s;
+}
+
+
+
+
+
+.container2 .thumb {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    gap: 20px;
+
+}
+
+.container2 .thumb .thumb-item {
+    width: 100px;
+    height: 165px;
+    position: relative;
+    z-index: 3;
+
+}
+
+
+.container2 .thumb .thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(80%);
+    box-shadow:
+        inset 0 -3em 3em rgb(0 200 0 / 30%),
+        0 0 0 2px white,
+        0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+
+.container2 .thumb .content2 {
+    position: absolute;
+    bottom: 10px;
+
+}
+
+.container2 .arrows2 {
+    position: absolute;
+    top: 150px;
+    left: 1rem;
+    z-index: 10;
+}
+
+.container2 .arrows2 button {
+    background: transparent;
+    border: none;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 8rem;
+}
+
+.container2 .arrows2 button:hover {
+
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+.container2 .arrows21 {
+
+    position: absolute;
+    top: 150px;
+    right: 1rem;
+    z-index: 10;
+}
+
+.container2 .arrows21 button {
+    background: transparent;
+    border: none;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 8rem;
+}
+
+.container2 .arrows21 button:hover {
+
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+/* Movimento da Thumb */
+
+.container2.next2 .thumb {
+    animation: effectNextThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectNextThumb {
+    from {
+        transform: translateX(150px);
+    }
+}
+
+/* Movimento ultima Thumb */
+
+.container2.next2 .thumb .thumb-item:nth-last-child(1) {
+    animation: effectLastThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectLastThumb {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+/* Textos Principais */
+
+.container2 .list2 .list-item:nth-last-child(1) .content2 .title,
+.container2 .list2 .list-item:nth-last-child(1) .content2 .description,
+.container2 .list2 .list-item:nth-last-child(1) .content2 .buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s 1s linear 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.container2 .list2 .list-item:nth-last-child(1) .content2 .title {
+    animation-delay: 1.2s;
+}
+
+.container2 .list2 .list-item:nth-last-child(1) .content2 .description {
+    animation-delay: 1.6s;
+}
+
+.container2 .list2 .list-item:nth-last-child(1) .content2 .buttons {
+    animation-delay: 2s;
+}
+
+/* Imagem Principal Next */
+.container2.next2 .list2 .list-item:nth-last-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showMainImage 0.5s linear 1 forwards;
+
+}
+
+@keyframes showMainImage {
+    to {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+/* Imagem Principal Back */
+.container2.back2 .list2 .list-item:nth-child(1) img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: hideMainImage 0.5s linear 1 forwards;
+    z-index: 2;
+}
+
+@keyframes hideMainImage {
+    to {
+        width: 114px;
+        height: 174px;
+        border-radius: 10px;
+        left: 49.55%;
+        bottom: 46px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+    .container2 .list2 .list-item img {
+        width: 100vw;
+        height: 100%;
+        /* Faz a imagem preencher o container */
+        object-fit: cover;
+        background-position: center;
+        filter: brightness(20%);
+    }
+
+    .container2 {
+
+        width: 100vw;
+
+        color: #eee;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+
+
+    .container2 .arrows2 {
+        position: absolute;
+        top: 450px;
+        left: 0.2rem;
+        z-index: 10;
+    }
+
+    .container2 .arrows2 button {
+        background: transparent;
+        border: none;
+        color: #eee;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+
+    .container2 .arrows2 button:hover {
+
+        opacity: 0.5;
+        transition: 0.7s;
+    }
+
+    .container2 .arrows21 {
+
+        position: absolute;
+        top: 450px;
+        right: .2rem;
+        z-index: 10;
+    }
+
+    .container2 .arrows21 button {
+        background: transparent;
+        border: none;
+        color: #eee;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+
+    .container2 .arrows21 button:hover {
+
+        opacity: 0.5;
+        transition: 0.7s;
+    }
+
+    .container2 .list2 .list-item .content2 {
+        position: absolute;
+        top: 3%;
+        left: 0;
+        width: 100vw;
+        color: #eee;
+        text-shadow: 0 5px 10px #0004;
+
+    }
+
+    .container2 .list2 .list-item .title {
+        font-size: 3.5em;
+        width: 1100px;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin: 1rem 0 1rem 3rem;
+
+    }
+
+    .container2 .list2 .list-item .description {
+        font-size: 1.5em;
+        width: 80%;
+        margin: 1rem 0 1rem 3rem;
+
+    }
+
+    .container2 .list2 .list-item .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: 40px;
+        margin-top: 20px;
+        gap: 5px;
+        margin: 1rem 0 2rem 3rem;
+    }
+
+
+    .container2 .thumb {
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .container2 .thumb .thumb-item {
+        width: 100px;
+        height: 165px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .container2 .thumb .thumb-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(80%);
+    }
+
+    @keyframes hideMainImage {
+        to {
+            width: 114px;
+            height: 174px;
+            border-radius: 10px;
+            left: 10%;
+            bottom: 25px;
+        }
+    }
+
+
+    /* Imagem Principal Next */
+    .container2.next2 .list2 .list-item:nth-last-child(1) img {
+        width: 150px;
+        height: 220px;
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        border-radius: 30px;
+        animation: showMainImage 0.5s linear 1 forwards;
+
+    }
+
+    @keyframes showMainImage {
+        to {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .container2 .list2 .list-item img {
+        width: 100vw;
+        height: 100%;
+        /* Faz a imagem preencher o container */
+        object-fit: cover;
+        background-position: center;
+        filter: brightness(20%);
+    }
+
+    .container2 {
+
+        width: 100vw;
+
+        color: #eee;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+
+
+    .container2 .arrows2 {
+        position: absolute;
+        top: 450px;
+        left: 0.2rem;
+        z-index: 10;
+    }
+
+    .container2 .arrows2 button {
+        background: transparent;
+        border: none;
+        color: #eee;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+
+    .container2 .arrows2 button:hover {
+
+        opacity: 0.5;
+        transition: 0.7s;
+    }
+
+    .container2 .arrows21 {
+
+        position: absolute;
+        top: 450px;
+        right: .2rem;
+        z-index: 10;
+    }
+
+    .container2 .arrows21 button {
+        background: transparent;
+        border: none;
+        color: #eee;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+
+    .container2 .arrows21 button:hover {
+
+        opacity: 0.5;
+        transition: 0.7s;
+    }
+
+    .container2 .list2 .list-item .content2 {
+        position: absolute;
+        top: 3%;
+        left: 0;
+        width: 100vw;
+        color: #eee;
+        text-shadow: 0 5px 10px #0004;
+
+    }
+
+    .container2 .list2 .list-item .title {
+        font-size: 3.3em;
+        width: 80%;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin: 1rem 0 1rem 3rem;
+
+    }
+
+    .container2 .list2 .list-item .description {
+        font-size: 1.1em;
+        width: 80%;
+        margin: 1rem 0 1rem 3rem;
+
+    }
+
+    .container2 .list2 .list-item .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: 30px;
+        margin-top: 20px;
+        gap: 5px;
+        margin: 1rem 0 2rem 3rem;
+    }
+
+
+    .container2 .thumb {
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .container2 .thumb .thumb-item {
+        width: 100px;
+        height: 165px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .container2 .thumb .thumb-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(80%);
+    }
+
+    @keyframes hideMainImage {
+        to {
+            width: 114px;
+            height: 174px;
+            border-radius: 10px;
+            left: 10%;
+            bottom: 25px;
+        }
+    }
+
+
+    /* Imagem Principal Next */
+    .container2.next2 .list2 .list-item:nth-last-child(1) img {
+        width: 150px;
+        height: 220px;
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        border-radius: 30px;
+        animation: showMainImage 0.5s linear 1 forwards;
+
+    }
+
+    @keyframes showMainImage {
+        to {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .container2 .list2 .list-item img {
+        width: 100vw;
+        height: 100%;
+        /* Faz a imagem preencher o container */
+        object-fit: cover;
+        background-position: center;
+        filter: brightness(20%);
+    }
+
+    .container2 {
+
+        width: 100vw;
+
+        color: #eee;
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+
+
+    .container2 .arrows2 {
+        position: absolute;
+        top: 450px;
+        left: 0.2rem;
+        z-index: 10;
+    }
+
+    .container2 .arrows2 button {
+        background: transparent;
+        border: none;
+        color: #eee;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+
+    .container2 .arrows2 button:hover {
+
+        opacity: 0.5;
+        transition: 0.7s;
+    }
+
+    .container2 .arrows21 {
+
+        position: absolute;
+        top: 450px;
+        right: .2rem;
+        z-index: 10;
+    }
+
+    .container2 .arrows21 button {
+        background: transparent;
+        border: none;
+        color: #eee;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 8rem;
+    }
+
+    .container2 .arrows21 button:hover {
+
+        opacity: 0.5;
+        transition: 0.7s;
+    }
+
+    .container2 .list2 .list-item .content2 {
+        position: absolute;
+        top: 3%;
+        left: 0;
+
+        width: 100vw;
+        color: #eee;
+        text-shadow: 0 5px 10px #0004;
+
+    }
+
+    .container2 .list2 .list-item .title {
+        font-size: 2.5em;
+        width: 90%;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin: 1rem 0 1rem .5rem;
+
+    }
+
+    .container2 .list2 .list-item .description {
+        font-size: 1em;
+        width: 90%;
+        margin: 1rem 0 1rem .5rem;
+
+    }
+
+    .container2 .list2 .list-item .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: 30px;
+        margin-top: 20px;
+        gap: 5px;
+        margin: 1rem 0 2rem .5rem;
+    }
+
+
+    .container2 .thumb {
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .container2 .thumb .thumb-item {
+        width: 100px;
+        height: 165px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .container2 .thumb .thumb-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: brightness(80%);
+    }
+
+    @keyframes hideMainImage {
+        to {
+            width: 114px;
+            height: 174px;
+            border-radius: 10px;
+            left: 10%;
+            bottom: 25px;
+        }
+    }
+
+
+    /* Imagem Principal Next */
+    .container2.next2 .list2 .list-item:nth-last-child(1) img {
+        width: 150px;
+        height: 220px;
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        border-radius: 30px;
+        animation: showMainImage 0.5s linear 1 forwards;
+
+    }
+
+    @keyframes showMainImage {
+        to {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+}
