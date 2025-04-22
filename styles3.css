@@ -419,7 +419,7 @@
 }
 
 /* Inicio - icones fixos na tela */
-.kali-image {
+.androi {
     width: 60px;
     position: fixed;
     z-index: 1001;
@@ -429,6 +429,10 @@
     border-radius: 50%;
     /* background: #ffffff; */
     font-size: 15px;
+}
+
+.android-image:hover {
+    border: 2px dashed #fff;
 }
 
 .whatsapp-content {
@@ -443,6 +447,10 @@
     right: 20px;
     bottom: 50px;
     cursor: pointer;
+}
+
+.whatsapp-contato-image:hover {
+    transform: rotate(90deg) translate(0, 0);
 }
 /* FIM - icones fixos na tela */
 
