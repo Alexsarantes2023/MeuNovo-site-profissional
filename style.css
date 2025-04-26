@@ -86,7 +86,10 @@ body {
     gap: 2em;
     list-style: none;
 }
-
+.register-item:hover {
+    background: #ffffff;
+    opacity:0.5;
+}
 
 .nav-item,
 .register-item {

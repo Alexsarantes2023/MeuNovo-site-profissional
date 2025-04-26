@@ -319,21 +319,29 @@
 }
 
 .question {
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 7px;
     font-weight: 500;
-    padding: 10px;
     cursor: pointer;
-    color: var(--font-color);
+    color: var(--white);
     border-top: #c2bcbc solid 1px;
+    border-radius: 10px;
+    background: linear-gradient(70deg, rgb(100, 143, 114), rgb(78, 160, 67));
+}
+.question:hover {
+    color:#f0b512;
 }
 
-.question-answers,
-.question-list {
+.question-list,
+.question-answers {
     font-size: var(--font-size-small);
     font-family: var(--font-body);
     font-weight: 400;
     padding: 0.2rem 1rem 2rem 2rem;
-    color: var(--font-color);
+    color: var(--font-color); 
 }
+
 
 /* Contato */
 .contact {
@@ -595,12 +603,22 @@
 
 
     .question {
+        height: 3rem;
         font-weight: 500;
-        padding: 10px 3rem;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 10px;
         cursor: pointer;
-        color: var(--font-color);
-        border-top: #c2bcbc solid 1px;
+        color: var(--white);
+        border-top: #c2bcbc solid 1px;   
     }
+
+    .question:hover {
+        font-size: 0.8rem;
+        color:#f0b512;
+    }
+ 
+
 
     .footer-itens {
         justify-content: center;
