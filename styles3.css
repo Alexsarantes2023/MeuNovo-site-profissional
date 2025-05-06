@@ -430,7 +430,7 @@
 
 /* Inicio - icones fixos na tela */
 .android-image {
-    width: 55px;
+    width: 50px;
     position: fixed;
     z-index: 1001;
     right: 35px;
@@ -618,7 +618,43 @@
         color:#f0b512;
     }
  
+/* Inicio - icones fixos na tela */
+.android-image {
+    width: 50px;
+    position: fixed;
+    z-index: 1001;
+    right: 15px;
+    top: 130px;
+    cursor: pointer;
+    border-radius: 20%;
+    /* background: #ffffff; */
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
 
+.android-image:hover {
+    border: 2px dashed #fff;
+}
+
+.whatsapp-content {
+    width: 55px;
+    display:flex;
+    position: relative;
+}
+
+.whatsapp-contato-image {
+    position: fixed;
+    z-index: 1001;
+    right: 10px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.whatsapp-contato-image:hover {
+    transform: rotate(90deg) translate(0, 0);
+}
+/* FIM - icones fixos na tela */
 
     .footer-itens {
         justify-content: center;
