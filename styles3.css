@@ -294,7 +294,7 @@
 /* Quentions */
 .question-content {
     width: 85%;
-    margin: 3rem auto;
+    margin: 3rem auto 2rem;
     display: flex;
 }
 
@@ -313,8 +313,7 @@
     width: 100%;
     font-size: var(--font-size-small);
     font-family: var(--font-body);
-    margin-bottom: 10px;
-
+    margin-bottom: 20px;
 
 }
 
@@ -341,6 +340,81 @@
     padding: 0.2rem 1rem 2rem 2rem;
     color: var(--font-color); 
 }
+
+/* Inicio da area de pagamentos */
+.pagamentos-section {
+    width: 100%;
+    height: auto;
+    background: var(--green);
+}
+
+.pagamentos-container {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+}
+.pagamento-container-esquerdo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 3rem auto 3rem auto;
+    
+
+    h1 {
+        width:18rem;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: var(--font-header);
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 2rem;
+    }	
+}
+
+.pagamento-container-direito {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 3rem auto 3rem auto;
+
+    h1 {
+        width:18rem;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: var(--font-header);
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        padding-top: 1rem;
+    }
+}
+
+
+.pagamento-img-esquerda {
+    width: 15rem;
+    height: 15rem;
+    border-radius:10px;
+}
+
+.pagamento-img-cripto {
+    width: 17rem;
+    height: 15rem;
+    border-radius:10px;
+}
+
+
+/* fim da area de pagamentos */
 
 
 /* Contato */
@@ -429,6 +503,24 @@
 }
 
 /* Inicio - icones fixos na tela */
+.qrcode-site {
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.qrcode-site:hover {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 180px;
+    height: 180px;
+}
+
 .android-image {
     width: 50px;
     position: fixed;
@@ -457,8 +549,7 @@
     z-index: 1001;
     right: 20px;
     bottom: 50px;
-    cursor: pointer;
-    transition: all 1s ease;
+     
 }
 
 .whatsapp-contato-image:hover {
@@ -583,12 +674,31 @@
         display: none;
     }
 
-
+    /*Inicio da responsividade do qrcode */
+    .qrcode-site {
+        position: absolute;
+        top: 135px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    
+    .qrcode-site:hover {
+        position: absolute;
+        top: 150px;
+        left: 15px;
+        width: 380px;
+        height: 380px;
+    }
+    /*fim da responsividade do qrcode */
 
     .question-content {
         width: 90%;
         margin: auto;
         flex-direction: column;
+        margin: 3rem auto 2.1rem;
     }
 
     .questions-title,
@@ -618,6 +728,22 @@
         color:#f0b512;
     }
  
+
+
+    /* inicio pagamento responsivo */
+    .pagamentos-container {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-left:auto;
+        margin-right: auto;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* fim pagamento responsivo */
+
+
 /* Inicio - icones fixos na tela */
 .android-image {
     width: 50px;
