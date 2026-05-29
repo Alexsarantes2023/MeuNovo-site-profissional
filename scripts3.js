@@ -2,6 +2,10 @@ const cardsWrapper = document.querySelector(".plan-content");
 const prev4 = document.querySelector(".prev4");
 const next4 = document.querySelector(".next4");
 
+const cardsWrapper2 = document.querySelector(".plan-content2");
+const prev5 = document.querySelector(".prev5");
+const next5 = document.querySelector(".next5");
+
 // Função para rolar o card suavemente para a esquerda.
 function scrollLeft() {
     cardsWrapper.scrollBy({
@@ -23,6 +27,25 @@ prev4.addEventListener("click", scrollLeft);
 next4.addEventListener("click", scrollRight);
 
 
+// Função para rolar o card suavemente para a esquerda.
+function scrollLeft2() {
+    cardsWrapper2.scrollBy({
+        left: -400,
+        behavior: "smooth",
+    });
+}
+
+// Função para rolar o card suavemente para a direita.
+function scrollRight2() {
+    cardsWrapper2.scrollBy({
+        left: 400,
+        behavior: "smooth",
+    });
+}
+
+// Adicionar um ouvinte de evento, de click nas setas.
+prev5.addEventListener("click", scrollLeft2);
+next5.addEventListener("click", scrollRight2);
 /*const btnMobile = document.getElementById("btn");
 const nav = document.querySelector(".nav");
 const register = document.querySelector(".register");
