@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="usuarioPosts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500;700&display=swap"
@@ -64,6 +65,13 @@
 <body>
 
     <header class="header">
+
+        <div id="usuarioInfo"></div>
+        <!-- Cabeçalho da página -->
+        <button type="button" id="logoutBtn" onClick="logout()">Sair</button>
+        <!-- Botão "Sair" que chama a função logout() ao ser clicado -->
+        
+        
         <!--logo-->
         <div class="logo">
             <a class="logo-content" rel="canonical" href="/">
@@ -645,6 +653,10 @@
         </div>
     </section>
 
+    <!-- Lista de Mensagens -->
+    <!-- Div onde as mensagens enviadas serão exibidas -->
+    <div id="listaMensagens"></div>
+
     <!-- Pagamentos -->
     <section class="pagamentos-section">
         <div class="pagamentos-container">
@@ -793,11 +805,23 @@
     </footer>
     <!-- <input onkeypress="aperte()" class="main-input" placeholder="Digite aqui" name="titiu">
     <button onclick="fazer()" class="main-button">Clique</button> -->
+
+
+</body>
+    <!-- Importação dos scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <!-- Biblioteca principal do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <!-- Biblioteca de autenticação do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <!-- Biblioteca do Firestore (banco de dados) -->
+
+    <script src="pages/home/mensagens.js" defer></script>
+    <script src="pages/home/home.js" defer></script>
+
     <script src="./script.js" defer></script>
     <script src="./scriptcar.js" defer></script>
     <script src="./scripts2.js" defer></script>
     <script src="./scripts3.js" defer></script>
     <script src="./script10.js" defer></script>
-</body>
-
 </html>
