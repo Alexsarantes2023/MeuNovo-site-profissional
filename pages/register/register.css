@@ -1,0 +1,34 @@
+body {
+    height: 100vh; /* Define a altura do body como 100% da altura da janela do navegador (viewport height) */
+}
+
+h1 {
+    color: white; /* Cor do texto branca */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    text-shadow: 2px 2px 1px black; /* Adiciona sombra preta ao texto: deslocamento horizontal 2px, vertical 2px, desfoque 1px */
+}
+
+form {
+    width: 300px; /* Define largura fixa de 300px para o formulário */
+}
+
+input {
+    border: none; /* Remove a borda padrão dos campos de entrada */
+    border-radius: 5px; /* Arredonda os cantos da caixa de entrada */
+}
+
+button {
+    margin-bottom: 10px; /* Espaço abaixo de cada botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+}
+
+label { 
+    display: block; /* Faz o label ocupar toda a largura disponível (quebra linha) */
+    margin-bottom: 5px; /* Espaço abaixo do label */
+    color: #fff; /* Cor do texto branca */
+    font-size: 18px; /* Tamanho da fonte relativamente grande */
+    text-shadow: 2px 2px 1px black; /* Sombra preta para destacar o texto */
+}
+
+
+  

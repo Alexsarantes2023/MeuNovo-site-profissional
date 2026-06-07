@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<!-- Define que o documento é HTML5 -->
+
+<html lang="pt-br">
+<!-- Início do documento HTML, com idioma definido como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz o site se adaptar a diferentes tamanhos de tela (responsivo) -->
+
+    <title>Home - Controle de Mensagens</title>
+    <!-- Título que aparece na aba do navegador -->
+</head>
+
+<body>
+    <!-- Início do corpo da página, onde ficam os elementos visíveis -->
+
+    <header>
+        <div id="usuarioInfo"></div>
+
+        <!-- Cabeçalho da página -->
+        <button type="button" id="logoutBtn" onClick="logout()">Sair</button>
+        <!-- Botão "Sair" que chama a função logout() ao ser clicado -->
+    </header>
+
+    <!-- Formulário para envio de mensagens -->
+    <form id="mensagemForm">
+      <h2>Enviar Postagens</h2>
+      <!-- Título do formulário -->
+
+      <label for="nome">Nome:</label>
+      <!-- Rótulo para o campo de nome -->
+      <input type="text" id="nome" name="nome" required><br><br>
+      <!-- Campo de texto para digitar o nome, obrigatório -->
+
+      <label for="mensagem">Mensagem:</label>
+      <!-- Rótulo para o campo de mensagem -->
+      <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+      <!-- Área de texto para digitar a mensagem, obrigatória -->
+
+      <button type="submit">Enviar</button>
+      <!-- Botão que envia o formulário -->
+    </form>
+
+    <!-- Div onde as mensagens enviadas serão exibidas -->
+    <div id="listaMensagens"></div>
+
+</body>
+
+<!-- Importação dos arquivos de estilo CSS -->
+<link rel="stylesheet" href="../../global.css">
+<!-- CSS global (provavelmente usado em várias páginas) -->
+<link rel="stylesheet" href="home.css">
+<!-- CSS específico da página home -->
+
+<!-- Importação dos scripts do Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<!-- Biblioteca principal do Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<!-- Biblioteca de autenticação do Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<!-- Biblioteca do Firestore (banco de dados) -->
+
+<script src="../../firebase-init.js"></script>
+<!-- Script de inicialização do Firebase (configurações do seu projeto) -->
+
+<script src="mensagens.js" defer></script>
+<!-- Script que contém a lógica de envio e exibição de mensagens -->
+<script src="home.js" defer></script>
+<!-- Script adicional da página home (provavelmente funções extras) -->
+
+</html>
+<!-- Fim do documento HTML -->

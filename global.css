@@ -1,0 +1,74 @@
+body { 
+    margin: 0; /* Remove todas as margens padrão do body */
+    Background: url("./img2/img1.webp"); /* Define uma imagem de fundo para a página */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    z-index: -1; /* Coloca o body atrás de outros elementos (pouco comum, pode causar problemas) */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-size: cover; /* Faz a imagem ocupar toda a área visível, ajustando proporcionalmente */
+}
+
+.centralize {
+    display: flex; /* Ativa o modelo flexbox para organizar os elementos filhos */
+    justify-content: center; /* Centraliza horizontalmente os elementos dentro do container */
+    align-items: center; /* Centraliza verticalmente os elementos dentro do container */
+}
+
+.form-field {
+    margin-bottom: 10px; /* Adiciona espaço abaixo de cada campo do formulário */
+}
+
+input, button {
+    padding: 10px; /* Espaçamento interno para aumentar a área clicável/digitável */
+    width: -webkit-fill-available; /* Faz o elemento ocupar toda a largura disponível (suporte específico do WebKit) */
+}
+
+.loading { 
+    background: rgba(0, 0, 0, 0.5); /* Fundo preto semitransparente */
+    position: fixed; /* Fixa o elemento na tela, mesmo ao rolar */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+}
+
+.loading label {
+    color: white; /* Texto branco */
+    font-size: 24px; /* Tamanho grande para destaque */
+}
+
+button {
+    cursor: pointer; /* Mostra o ícone de mãozinha ao passar sobre o botão */
+}
+
+button:active {
+    opacity: 0.8; /* Deixa o botão levemente transparente quando clicado */
+}
+
+button[disabled] {
+    opacity: 0.7; /* Botão desativado fica mais apagado */
+} 
+
+.clear {
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+    color: white; /* Texto branco */
+}
+
+.solid {
+    background: white; /* Fundo branco */
+    border: none; /* Sem borda */
+    color: rgb(45, 211, 111); /* Texto verde */
+}
+
+.outline {
+    background: transparent; /* Fundo transparente */
+    color: white; /* Texto branco */
+    border: 1px solid white; /* Borda branca fina */
+}
+
+.error {
+    color: red; /* Texto vermelho para indicar erro */
+    background: transparent; /* Fundo transparente */
+    display: none; /* Inicialmente escondido */
+    font-size: 16px; /* Tamanho médio do texto */
+    font-weight: 900; /* Texto bem mais grosso/negrito */
+    text-shadow: 2px 2px 1px black; /* Sombra preta para destacar o texto */
+}

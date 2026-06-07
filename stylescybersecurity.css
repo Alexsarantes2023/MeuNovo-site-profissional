@@ -39,10 +39,6 @@ body {
 }
 
 
-
-
-
-
 /* Header */
 .header {
     background: radial-gradient(circle, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 100%);
@@ -127,9 +123,6 @@ body {
     border: none;
     cursor: pointer;
 }
-
-
-
 
 
 .xsss {
@@ -580,7 +573,7 @@ h1 {
     }
 
     .nav,
-    .register {
+    .registerx {
         display: none;
     }
 
@@ -622,7 +615,7 @@ h1 {
 
 
     .nav.active,
-    .register.active {
+    .registerx.active {
         display: block;
         opacity: 0;
         animation: showMenuImage 1s linear 1 forwards;
@@ -654,7 +647,7 @@ h1 {
 
     }
 
-    .register-item {
+    .register-itemx {
         border: none;
         color: var(--white);
         box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
@@ -663,7 +656,7 @@ h1 {
 
 
 
-    .register-item:hover {
+    .register-itemx:hover {
         background: #1832a5;
     }
 
@@ -910,5 +903,3 @@ h1 {
 }
 /* FIM - icones fixos na tela */
 }
-
-

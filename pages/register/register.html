@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o tipo de documento como HTML5 e idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para ser responsiva em dispositivos móveis -->
+    <title>Registrar - Controle de gastos</title> <!-- Título da aba do navegador -->
+</head>
+
+<body class="centralize"> <!-- Corpo da página, com classe "centralize" para centralizar conteúdo via CSS -->
+    
+    <form> <!-- Início do formulário -->
+        <h1>Registrar</h1> <!-- Título principal da página -->
+
+        <!-- Campo de email -->
+        <div class="form-field">
+            <div><label>Email</label></div> <!-- Rótulo do campo -->
+            <input type="email" placeholder="seu@email.com"
+                onchange="onChangeEmail()" id="email"/> <!-- Campo de entrada de email, chama função JS ao mudar -->
+            <div class="error" id="email-required-error">
+                Email é obrigatório <!-- Mensagem de erro: email não preenchido -->
+            </div>
+            <div class="error" id="email-invalid-error">
+                Email é inválido <!-- Mensagem de erro: email inválido -->
+            </div>
+        </div>
+
+        <!-- Campo de senha -->
+        <div class="form-field">
+            <div><label>Senha</label></div> <!-- Rótulo do campo -->
+            <input type="password" placeholder="Senha"
+                id="password" onchange="onChangePassword()"/> <!-- Campo de senha, chama função JS ao mudar -->
+            <div class="error" id="password-required-error">
+                Senha é obrigatório <!-- Mensagem de erro: senha não preenchida -->
+            </div>
+            <div class="error" id="password-min-length-error">
+                Senha deve ter pelo menos 6 caracteres <!-- Mensagem de erro: senha curta -->
+            </div>
+        </div>
+
+        <!-- Campo de confirmação de senha -->
+        <div class="form-field">
+            <div><label>Confirmar senha</label></div> <!-- Rótulo do campo -->
+            <input type="password" placeholder="Confirmar senha"
+                id="confirmPassword" onchange="onChangeConfirmPassword()"/> <!-- Campo de confirmação -->
+            <div class="error" id="password-doesnt-match-error">
+                Senha e Confirmar senha devem ser iguais <!-- Mensagem de erro: senhas diferentes -->
+            </div>
+        </div>
+
+        <!-- Botão de registro -->
+        <div>
+            <button type="button" class="solid" disabled="true"
+                onclick="register()" id="register-button">
+                Registrar <!-- Botão para registrar, inicialmente desabilitado -->
+            </button>
+        </div>
+
+        <!-- Botão para ir ao login -->
+        <div>
+            <button type="button" class="clear" onclick="irparalogin()">
+                Login <!-- Botão que redireciona para página de login -->
+            </button>
+        </div>
+    </form> <!-- Fim do formulário -->
+    
+</body>
+
+<!-- Importação dos estilos CSS -->
+<link rel="stylesheet" href="../../global.css"> <!-- CSS global -->
+<link rel="stylesheet" href="register.css"> <!-- CSS específico da página de registro -->
+
+<!-- Importação dos scripts do Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script> <!-- Biblioteca principal do Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script> <!-- Biblioteca de autenticação do Firebase -->
+<script src="../../firebase-init.js"></script> <!-- Script de inicialização do Firebase -->
+
+<!-- Importação dos scripts da aplicação -->
+<script src="register.js"></script> <!-- Script com funções de registro -->
+<script src="../../validations.js"></script> <!-- Script com funções de validação -->
+<script src="../../loading.js"></script> <!-- Script para mostrar/esconder tela de carregamento -->
+
+</html> <!-- Fim do documento HTML -->

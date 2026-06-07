@@ -1,0 +1,359 @@
+body {
+  min-height: 100vh;              /* O body sempre terá no mínimo a altura total da tela */
+  margin: 0;                      /* Remove margens padrão do navegador */
+  font-family: Arial, sans-serif; /* Define a fonte principal como Arial */
+  background: #f5f5f5;            /* Cor de fundo cinza claro */
+  display: flex;                  /* Torna o body um container flexível */
+  flex-direction: column;         /* Organiza os elementos em coluna (vertical) */
+  align-items: center;            /* Centraliza os elementos horizontalmente */
+  padding-bottom: 40px;           /* Espaço extra no final da página */
+}
+
+header { 
+  width: 100%;                    /* Header ocupa toda a largura da tela */
+  display: flex;                  /* Layout flexível */
+  justify-content: space-between; /* Espaço entre elementos (esquerda/direita) */
+  align-items: center;            /* Alinha verticalmente ao centro */
+  padding: 10px 40px;             /* Espaçamento interno */
+  background: #333;               /* Fundo cinza escuro */
+}
+
+/* Email do usuário */
+#usuarioInfo {
+  color: white;                   /* Texto branco */
+  font-weight: 900;               /* Texto bem negrito */
+  font-size: 18px;                /* Tamanho da fonte */
+  margin-left: 20px;              /* Espaço à esquerda */
+}
+
+/* Botão "Sair" */
+header button { 
+  background: transparent;          /* Fundo vermelho */
+  color: #fff;                  /* Texto branco */
+  border: 1px solid #ff4d4d;    /* Borda vermelha para destacar */ 
+  padding: 8px 16px;              /* Espaçamento interno */
+  border-radius: 4px;             /* Cantos arredondados */
+  cursor: pointer;                /* Cursor de mãozinha */
+  font-weight: 900;               /* Texto em negrito */
+  font-size: 16px;                /* Tamanho da fonte */
+  width: 100px;                   /* Largura fixa */
+  text-align: center;             /* Centraliza texto */
+  margin-right: 20px;             /* Espaço à direita */
+}
+
+header button:hover {
+  background: #e60000;            /* Fundo vermelho mais escuro ao passar o mouse */
+}
+
+/* Formulário */
+form {
+  background: #fff;               /* Fundo branco */
+  padding: 40px;                  /* Espaçamento interno */
+  margin-top: 40px;               /* Espaço acima */
+  margin-bottom: 30px;            /* Espaço abaixo */
+  border-radius: 10px;            /* Cantos arredondados */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Sombra leve */
+  width: 800px;                   /* Largura padrão */
+  max-width: 95%;                 /* Ajusta em telas menores */
+  box-sizing: border-box;         /* Inclui padding/borda no cálculo da largura */
+}
+
+form h2 {
+  margin-bottom: 30px;            /* Espaço abaixo do título */
+  text-align: center;             /* Centraliza o título */
+}
+
+form label {
+  display: block;                 /* Ocupa linha inteira */
+  margin-bottom: 12px;            /* Espaço abaixo */
+  font-weight: bold;              /* Texto em negrito */
+}
+
+form input, form textarea {
+  width: 100%;                    /* Ocupa toda a largura disponível */
+  padding: 14px;                  /* Espaçamento interno */
+  margin-bottom: 20px;            /* Espaço abaixo */
+  border: 1px solid #ccc;         /* Borda cinza clara */
+  border-radius: 6px;             /* Cantos arredondados */
+  box-sizing: border-box;         /* Inclui padding/borda no cálculo da largura */
+}
+
+form textarea {
+  height: 220px;                  /* Altura fixa */
+  resize: vertical;               /* Permite redimensionar apenas na vertical */
+}
+
+form button {
+  width: 100%;                    /* Botão ocupa toda a largura */
+  padding: 16px;                  /* Espaçamento interno */
+  background: #4CAF50;            /* Fundo verde */
+  color: #fff;                    /* Texto branco */
+  border: none;                   /* Sem borda */
+  border-radius: 6px;             /* Cantos arredondados */
+  cursor: pointer;                /* Cursor de mãozinha */
+}
+
+form button:hover {
+  background: #45a049;            /* Verde mais escuro ao passar o mouse */
+}
+
+/* Lista de mensagens */
+#listaMensagens {
+  margin-top: 20px;               /* Espaço acima */
+  width: 800px;                   /* Largura padrão */
+  max-width: 95%;                 /* Ajusta em telas menores */
+  background: #fff;               /* Fundo branco */
+  padding: 20px;                  /* Espaçamento interno */
+  border-radius: 8px;             /* Cantos arredondados */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra leve */
+  box-sizing: border-box;         /* Inclui padding/borda no cálculo da largura */
+}
+
+.mensagem-item {
+  display: flex;                  /* Layout flexível */
+  justify-content: space-between; /* Espaço entre texto e botão */
+  align-items: center;            /* Alinha verticalmente */
+  padding: 8px;                   /* Espaçamento interno */
+  border-bottom: 1px solid #eee;  /* Linha divisória */
+}
+
+/* Texto da mensagem */
+.mensagem-item span {
+  word-wrap: break-word;          /* Quebra palavras longas */
+  overflow-wrap: break-word;      /* Compatibilidade extra */
+  white-space: pre-wrap;          /* Mantém quebras de linha */
+  flex: 1;                        /* Ocupa espaço flexível */
+  margin-right: 15px;             /* Espaço à direita */
+  display: block;                 /* Ocupa linha inteira */
+  max-width: calc(100% - 120px);  /* Reserva espaço para botão */
+}
+
+/* Botão delete */
+.btn-delete {
+  background: #ff4d4d;            /* Fundo vermelho */
+  border: none;                   /* Sem borda */
+  font-size: 22px;                /* Tamanho do emoji */
+  cursor: pointer;                /* Cursor de mãozinha */
+  padding: 4px;                   /* Espaço interno mínimo */
+  border-radius: 4px;             /* Cantos arredondados */
+  width: auto !important;         /* Largura automática */
+  min-width: unset !important;    /* Remove largura mínima herdada */
+  max-width: fit-content;         /* Ajusta ao conteúdo */
+  text-align: center;             /* Centraliza emoji */
+  flex-shrink: 0;                 /* Impede compressão pelo flexbox */
+}
+
+.btn-delete:hover {
+  color: #e60000;                 /* Emoji fica vermelho escuro ao passar o mouse */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  form, #listaMensagens {
+    width: 90%;                   /* Ajusta largura */
+    padding: 20px;                /* Reduz espaçamento interno */
+  }
+
+  form textarea {
+    height: 180px;                /* Reduz altura */
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  form, #listaMensagens {
+    width: 100%;                  /* Ocupa toda a largura */
+    padding: 15px;                /* Espaçamento menor */
+    margin: 0 10px;               /* Margem lateral */
+  }
+
+  form h2 {
+    font-size: 18px;              /* Título menor */
+  }
+
+  form input, form textarea {
+    font-size: 14px;              /* Texto menor */
+    padding: 10px;                /* Espaçamento reduzido */
+  }
+
+  form textarea {
+    height: 140px;                /* Altura menor */
+  }
+
+  header {
+    flex-direction: column;       /* Elementos empilhados */
+    align-items: flex-start;      /* Alinhados à esquerda */
+  }
+
+  header button {
+    margin-top: 10px;             /* Espaço acima do botão */
+    width: 100%;                  /* Botão ocupa toda a largura */
+  }
+
+  .mensagem-item {
+    flex-direction: row;          /* Mantém texto e botão lado a lado */
+    align-items: center;          /* Alinha verticalmente */
+  }
+
+  .mensagem-item span {
+    max-width: calc(100% - 90px); /* Garante espaço para botão compacto */
+    margin-right: 10px;           /* Espaço entre texto e botão */
+  }
+
+  .btn-delete {
+    width: auto;                  /* Botão ajusta ao conteúdo */
+    min-width: 70px;              /* Define largura mínima */
+    margin-top: 0;                /* Mantém alinhado na mesma linha */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+  min-height: 100vh;  garante que o body ocupe pelo menos toda a altura da tela (viewport height) 
+  margin: 0; /* remove margens padrão do navegador
+  font-family: Arial, sans-serif; define a fonte usada no site
+  background: #f5f5f5;  cor de fundo cinza claro
+  display: flex;  ativa o modelo flexbox para organizar os elementos
+  flex-direction: column;  organiza os elementos em coluna (um abaixo do outro)
+  align-items: center;  centraliza os elementos horizontalmente
+  padding-bottom: 40px;  adiciona espaço extra no fim da página
+}
+
+header { 
+  width: 100%;  ocupa toda a largura da tela
+  text-align: right;  alinha o conteúdo (botão) à direita
+  padding: 10px 20px;  espaço interno em cima/baixo (10px) e nas laterais (20px)
+  background: #333;  cor de fundo cinza escuro 
+}
+
+ Estilo para o email do usuário
+#usuarioInfo {
+  color: white;        🔹 Define a cor da letra como branca
+  font-weight: bold;   🔹 Deixa o texto em negrito 
+  font-size: 16px;     Opcional: aumenta um pouco o tamanho da fonte 
+  background-color: #333;  Opcional: fundo escuro para contraste 
+  padding: 8px;        Opcional: espaço interno para destacar 
+  border-radius: 4px;  Opcional: cantos arredondados
+}
+
+
+header button { 
+  background: #ff4d4d;  cor de fundo vermelha
+  color: #fff;  texto branco 
+  border: none;  remove borda padrão 
+  padding: 8px 16px;  espaço interno do botão 
+  border-radius: 4px;  cantos arredondados
+  cursor: pointer;  mostra o cursor de "mãozinha" ao passar por cima 
+  font-weight: 900;       🔹 Peso da fonte bem grosso (bold forte) 
+  font-size: 20px;        🔹 Tamanho maior para destacar 
+}
+
+header button:hover {
+  background: #e60000; /* muda a cor de fundo para vermelho mais escuro quando o mouse passa por cima
+}
+
+form {
+  background: #fff;  fundo branco 
+  padding: 40px;  espaço interno grande 
+  margin-top: 40px;  espaço acima do formulário 
+  margin-bottom: 30px;  espaço abaixo do formulário (antes da lista) 
+  border-radius: 10px;  cantos arredondados 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);  sombra leve para dar efeito de "cartão"
+  width: 800px;  largura fixa do formulário 
+}
+
+form h2 {
+  margin-bottom: 30px;  espaço abaixo do título
+  text-align: center;  centraliza o título 
+}
+
+form label {
+  display: block;  faz o label ocupar toda a linha 
+  margin-bottom: 12px;  espaço abaixo do label 
+  font-weight: bold;  deixa o texto em negrito 
+}
+
+form input, form textarea {
+  width: 100%;  ocupa toda a largura disponível 
+  padding: 14px;  espaço interno 
+  margin-bottom: 20px;  espaço abaixo de cada campo 
+  border: 1px solid #ccc;  borda cinza clara 
+  border-radius: 6px;  cantos arredondados 
+}
+
+form textarea {
+  height: 220px;  altura fixa para a área de texto 
+  resize: vertical;  permite redimensionar apenas na vertical 
+}
+
+form button {
+  width: 100%;  botão ocupa toda a largura 
+  padding: 16px;  espaço interno 
+  background: #4CAF50;  verde padrão 
+  color: #fff;  texto branco 
+  border: none;  remove borda padrão 
+  border-radius: 6px;  cantos arredondados 
+  cursor: pointer;  cursor de mãozinha 
+}
+
+form button:hover {
+  background: #45a049; verde mais escuro quando o mouse passa por cima 
+}
+
+#listaMensagens {
+  margin-top: 20px;  espaço acima da lista
+  width: 800px;  largura fixa igual ao formulário 
+  background: #fff;  fundo branco 
+  padding: 20px;  espaço interno 
+  border-radius: 8px;  cantos arredondados 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);  sombra leve 
+}
+
+.mensagem-item {
+  display: flex;  usa flexbox para organizar conteúdo 
+  justify-content: space-between;  coloca o texto à esquerda e o botão à direita
+  align-items: center;  alinha verticalmente no centro 
+  padding: 8px;  espaço interno 
+  border-bottom: 1px solid #eee;  linha cinza clara separando mensagens 
+}
+
+.btn-delete {
+  background: transparent;  sem fundo 
+  color: #ff4d4d;  texto vermelho 
+  border: none;  sem borda 
+  font-size: 14px;  tamanho da fonte 
+  cursor: pointer;  cursor de mãozinha 
+}
+
+.btn-delete:hover {
+  color: #e60000;  vermelho mais escuro quando o mouse passa por cima 
+}
+*/
+
+
+
+
+
+
+
+
+/*body {
+    height: 100vh;
+}
+
+header { 
+    text-align: right;
+}
+
+header button { 
+    width: auto;
+}*/
