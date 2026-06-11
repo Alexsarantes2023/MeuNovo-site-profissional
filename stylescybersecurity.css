@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -24,7 +25,6 @@
     --white: #fff;
     --gray: #ecebeb;
     --gray-300: #c4c4c4;
-
     --primaria: #4f46e5;
     --secundaria: #7c3aed;
     --escuro: #0f172a;
@@ -33,28 +33,21 @@
     --vidro: rgba(255, 255, 255, 0.1);
 }
 
-
-body {
-  overflow-x: hidden;
-}
-
-
-/* Header */
+/*Header*/ 
 .header {
     background: radial-gradient(circle, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 100%);
     font-family: var(--font-header);
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
+    margin-top: 40px;
     padding: 0 1.5rem;
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 4px;
     z-index: 4;
 }
-
-
 
 .logoxx {
     border-radius: 50px;
@@ -124,7 +117,6 @@ body {
     cursor: pointer;
 }
 
-
 .xsss {
     color: yellow;
     font-size: 25px;
@@ -164,10 +156,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-body {
-    background-color: var(--escuro);
-    color: var(--claro);
-}
+
 
 .cabecalho {
     min-height: 100vh;
@@ -394,7 +383,7 @@ h1 {
     width: 60px;
     position: fixed;
     z-index: 1001;
-    left: 35px;
+    right: 35px;
     top: 150px;
     cursor: pointer;
     border: 2px solid #fff;
@@ -404,7 +393,7 @@ h1 {
 }
 
 .android-image:hover {
-    border: 2px dashed #fff;
+    border: 3px dashed #40e42b;
 }
 
 .kali-image {
@@ -647,7 +636,7 @@ h1 {
 
     }
 
-    .register-itemx {
+    .register-item {
         border: none;
         color: var(--white);
         box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
@@ -656,7 +645,7 @@ h1 {
 
 
 
-    .register-itemx:hover {
+    .register-item:hover {
         background: #1832a5;
     }
 
@@ -772,6 +761,8 @@ h1 {
         justify-content: center;
     }
 
+
+
 }
 @media only screen and (max-width: 500px) {
 
@@ -843,17 +834,17 @@ h1 {
     width: 55px;
     position: fixed;
     z-index: 1001;
-    left: 15px;
+    right: 15px;
     top: 130px;
     cursor: pointer;
-    border: 2px solid #fff;
+    border: 2px solid #fdfdfd;
     border-radius: 50%;
     /* background: #ffffff; */
     font-size: 15px;
 }
 
 .android-image:hover {
-    border: 2px dashed #fff;
+    border: 3px dashed #40e42b;
 }
 
 .kali-image {
@@ -902,4 +893,7 @@ h1 {
     transform: rotate(90deg) translate(0, 0);
 }
 /* FIM - icones fixos na tela */
+
+
+
 }

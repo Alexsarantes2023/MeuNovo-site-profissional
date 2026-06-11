@@ -1,7 +1,7 @@
 const btnMobile = document.getElementById("btn");
 const nav = document.querySelector(".nav");
 const registers = document.querySelector(".registerx");
-const navItens = document.querySelectorAll(".nav-itens a, .register-itensx a");
+const navItens = document.querySelectorAll(".nav-itens a, .register-itens a");
 
 function toggleMenu() {
     btnMobile.classList.toggle("active");

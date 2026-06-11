@@ -4,8 +4,6 @@ firebase.auth().onAuthStateChanged(user => {
     }
 })
 
-
-
 function onChangeEmail() {
     toggleButtonsDisable();
     toggleEmailErrors();

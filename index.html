@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="stylescybersecurity.css">
     <link rel="stylesheet" href="usuarioPosts.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
@@ -28,7 +29,6 @@
     <meta name="description"
         content="Desenvolvedor Fustack profissional web, desktop, mobile, I.A, e Cyber Threat Intelligence com respostas a incidentes e forense" />
 
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/" />
@@ -45,8 +45,6 @@
         content="Desenvolvedor Fustack profissional web, desktop, mobile, I.A, e Cyber Threat Intelligence com respostas a incidentes e forense" />
     <meta property="twitter:image" content="img/DSC00112.svg" />
 
-
-
     <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -55,17 +53,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet" />
-
-
     <script defer src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" defer></script>
-
-
 </head>
 
 <body>
- 
-    <header class="header">
+    <header class="header2">
+        <div id="usuarioInfo"></div>
+        <button type="button" id="logoutBtn" onClick="logout()">Exit</button>
+    </header>
 
+    <header class="header">
         <!--logo-->
         <div class="logo">
             <a class="logo-content" rel="canonical" href="/">
@@ -74,7 +71,7 @@
             </a>
         </div>
         <!--nav-->
-        <nav class="nav" arial-label="Menu de navegação">
+        <nav class="nav" aria-label="Menu de navegação">
             <ul class="nav-itens" role="menu">
                 <li role="menuitem"><a rel="canonical" href="/" class="nav-item">Sobre</a></li>
                 <li role="menuitem"><a rel="canonical" href="#container2" class="nav-item">Beneficios</a></li>
@@ -99,8 +96,6 @@
         </button>
     </header>
     
-
-
     <section class="container">
         
 
@@ -230,7 +225,6 @@
 
     <div class="qrcode-s"><img src="./imgpg/meu_site_qrcode.jpg"  alt="qrcode-site" class="qrcode-site"></div>
 
-
     <section class="container2" id="container2">
         <div class="list2">
 
@@ -359,7 +353,6 @@
 
 
     </section>
-
 
     <!-- Plan 1-->
     <section class="plans" id="plans">
@@ -648,6 +641,10 @@
         </div>
     </section>
 
+    <h2 class="message-title">Postagens dos Visitantes</h2>
+
+    <!-- Div onde as mensagens enviadas serão exibidas -->
+    <div id="listaMensagens"></div>
 
     <!-- Pagamentos -->
     <section class="pagamentos-section">
@@ -795,20 +792,15 @@
         </div>
         </div>
     </footer>
-    <!-- <input onkeypress="aperte()" class="main-input" placeholder="Digite aqui" name="titiu">
-    <button onclick="fazer()" class="main-button">Clique</button> -->
-
 
 </body>
-    <!-- Importação dos scripts do Firebase -->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-    <!-- Biblioteca principal do Firebase -->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-    <!-- Biblioteca de autenticação do Firebase -->
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-    <!-- Biblioteca do Firestore (banco de dados) -->
 
-    <script src="pages/home/mensagens.js" defer></script>
+    <script src="./firebase-init.js"></script>
+
+    <script src="./mensagens2.js" defer></script>
     <script src="pages/home/home.js" defer></script>
 
     <script src="./script.js" defer></script>

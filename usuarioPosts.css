@@ -1,3 +1,14 @@
+.header2 { 
+  width: 100%;                    /* Header ocupa toda a largura da tela */
+  display: flex;                  /* Layout flexível */
+  justify-content: space-between; /* Espaço entre elementos (esquerda/direita) */
+  align-items: center;            /* Alinha verticalmente ao centro */
+  padding: 9px 0px;             /* Espaçamento interno */
+  position: fixed;
+  background: #333;               /* Fundo cinza escuro */
+  z-index: 4;
+}
+
 /* Email do usuário */
 #usuarioInfo {
   color: white;                   /* Texto branco */
@@ -7,11 +18,11 @@
 }
 
 /* Botão "Sair" */
-header button { 
+#logoutBtn { 
   background: transparent;          /* Fundo vermelho */
   color: #fff;                  /* Texto branco */
   border: 1px solid #ff4d4d;    /* Borda vermelha para destacar */ 
-  padding: 8px 16px;              /* Espaçamento interno */
+  padding: 0px 16px;              /* Espaçamento interno */
   border-radius: 4px;             /* Cantos arredondados */
   cursor: pointer;                /* Cursor de mãozinha */
   font-weight: 900;               /* Texto em negrito */
@@ -21,16 +32,34 @@ header button {
   margin-right: 20px;             /* Espaço à direita */
 }
 
+#logoutBtn:hover {
+  background: #e60000;            /* Fundo vermelho mais escuro ao passar o mouse */
+}
+
+.message-title {
+  text-align: center;             /* Centraliza o título */
+  margin-top: 26px;              /* Espaço acima do título (considerando o header fixo) */
+  font-size: 24px;                /* Tamanho da fonte do título */
+  color: white;                  /* Cor do texto do título */
+}
+
 /* Lista de mensagens */
 #listaMensagens {
-  margin-top: 20px;               /* Espaço acima */
+  display: flex;                  /* Layout flexível */
+  flex-direction: column;         /* Itens empilhados verticalmente */
+  margin: 30px auto;
+  margin-bottom: 50px;              /* Espaço abaixo do título */   
+  padding: 20px;        
   width: 800px;                   /* Largura padrão */
   max-width: 95%;                 /* Ajusta em telas menores */
+  color: #333;                  /* Cor do texto */
   background: #fff;               /* Fundo branco */
-  padding: 20px;                  /* Espaçamento interno */
+             
   border-radius: 8px;             /* Cantos arredondados */
   box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra leve */
   box-sizing: border-box;         /* Inclui padding/borda no cálculo da largura */
+  height: 500px;                    /* Metade da altura do contêiner pai */
+  overflow-y: auto;               /* Rolagem vertical quando necessário */
 }
 
 .mensagem-item {
@@ -52,21 +81,64 @@ header button {
   max-width: calc(100% - 120px);  /* Reserva espaço para botão */
 }
 
-/* Botão delete */
-.btn-delete {
-  background: #ff4d4d;            /* Fundo vermelho */
-  border: none;                   /* Sem borda */
-  font-size: 22px;                /* Tamanho do emoji */
-  cursor: pointer;                /* Cursor de mãozinha */
-  padding: 4px;                   /* Espaço interno mínimo */
-  border-radius: 4px;             /* Cantos arredondados */
-  width: auto !important;         /* Largura automática */
-  min-width: unset !important;    /* Remove largura mínima herdada */
-  max-width: fit-content;         /* Ajusta ao conteúdo */
-  text-align: center;             /* Centraliza emoji */
-  flex-shrink: 0;                 /* Impede compressão pelo flexbox */
+#email {
+  margin-left: 8px; /* ou o valor que preferir */
 }
 
-.btn-delete:hover {
-  color: #e60000;                 /* Emoji fica vermelho escuro ao passar o mouse */
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+   #listaMensagens {
+    width: 90%;                   /* Ajusta largura */
+    padding: 20px;                /* Reduz espaçamento interno */
+  }
 }
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  #listaMensagens {
+    width: 100%;                  /* Ocupa toda a largura */
+    padding: 15px;                /* Espaçamento menor */
+    margin: 0 10px 40px;               /* Margem lateral */
+  }
+
+  .message-title {
+  text-align: center;             /* Centraliza o título */
+  margin-top: 26px;
+  margin-bottom: 30px;            /* Espaço abaixo do título */
+  font-size: 24px;                /* Tamanho da fonte do título */
+  color: white;                  /* Cor do texto do título */
+  }
+
+  .mensagem-item {
+    flex-direction: row;          /* Mantém texto e botão lado a lado */
+    align-items: center;          /* Alinha verticalmente */
+  }
+
+  .mensagem-item span {
+    max-width: calc(100% - 90px); /* Garante espaço para botão compacto */
+    margin-right: 10px;           /* Espaço entre texto e botão */
+  }
+  /* Botão "Sair" */
+  #logoutBtn { 
+  background: transparent;          /* Fundo vermelho */
+  color: #fff;                  /* Texto branco */
+  border: 1px solid #ff4d4d;    /* Borda vermelha para destacar */ 
+  padding: 0px 10px;              /* Espaçamento interno */
+  border-radius: 4px;             /* Cantos arredondados */
+  cursor: pointer;                /* Cursor de mãozinha */
+  font-weight: 900;               /* Texto em negrito */
+  font-size: 16px;                /* Tamanho da fonte */
+  width: 50px;                   /* Largura fixa */
+  text-align: center;             /* Centraliza texto */
+  margin-right: 20px;             /* Espaço à direita */
+  }
+}
+
+
+
+
+
+
+
+
+

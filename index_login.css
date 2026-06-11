@@ -1,7 +1,18 @@
    
     body {
-        height: 100vh;
+    width: 100%;    
+    height: 100%;
+    Background: url("./img2/img1.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     }
+
+    /*Header*/ 
+    .header {
+    margin-top: 0;
+    }
+
     form {
         width: 300px;
     }
@@ -11,6 +22,8 @@
     button {
         margin-bottom: 10px;
     }
+
+
   
 
 

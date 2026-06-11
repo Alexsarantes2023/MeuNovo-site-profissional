@@ -18,10 +18,10 @@
 }
 
 
-/* HEADER TEMPLATES ARANTES INICIO */
+/* HEADER TEMPLATES ARANTES INICIO 
 .header {
-    background: radial-gradient(circle, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 100%);
-    /*background: rgba(255, 255, 1, 0.8);*/
+    background: radial-gradient(circle, rgba(255, 215, 0, 1) 0%, rgba(255, 215, 0, 0.4) 100%);*/
+    /*background: rgba(255, 255, 1, 0.8);
     font-family: var(--font-header);
     width: 100%;
     display: flex;
@@ -32,7 +32,7 @@
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 4px;
     z-index: 4;
-}
+}*/
 
 * {
     padding: 0;
