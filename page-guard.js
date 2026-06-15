@@ -9,7 +9,8 @@ const paginasPermitidas = [
     "/dev-web-fullstack.html",
     "/cyber-security.html",
     "/dev-desktop-mobile.html",
-    "/lei_geral_lgpd.html"
+    "https://alexarantes.com.br/dev-desktop-mobile",
+    "https://alexarantes.com.br/lei_geral_lgpd.html"
 ];
 
 // Função que verifica se a página atual é permitida
