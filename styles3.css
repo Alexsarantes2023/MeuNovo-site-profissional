@@ -3,13 +3,11 @@
     width: 100%;
     background: var(--white);
 }
-
 .card-content {
     width: 80%;
     margin: auto;
     flex-wrap: wrap;
 }
-
 .cards-title {
     font-size: var(--font-size-medium);
     font-family: var(--font-header);
@@ -18,24 +16,19 @@
     text-align: center;
     margin: 3rem 0 4rem 0;
 }
-
 .card {
     width: 100%;
     display: flex;
     margin: 1.5rem 1rem 4rem;
-
     justify-content: space-between;
 }
-
 .card:nth-child(2) {
     flex-direction: row-reverse;
 }
-
 .card:nth-child(2) .card-title,
 .card:nth-child(2) .card-description {
     text-align: end;
 }
-
 .card-image {
     display: flex;
     width: 400px;
@@ -44,13 +37,11 @@
     border: 2px solid var(--gray);
     box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 4px;
 }
-
 .card-img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-
 .card-title {
     font-size: var(--font-size-small);
     font-family: var(--font-header);
@@ -58,7 +49,6 @@
     font-weight: 900;
     padding: 8rem auto;
 }
-
 .card-description {
     font-size: var(--font-size-small);
     font-family: var(--font-body);
@@ -66,7 +56,6 @@
     padding: 0.5rem 0;
     line-height: 1.5;
 }
-
 .card-text {
     width: 70%;
     display: flex;
@@ -74,30 +63,21 @@
     justify-content: center;
     flex-direction: column;
 }
-
 .arrow3,
 .btn-mobile {
     display: none;
 }
-
 /* Plano */
-
 .plans,
 .questions {
     width: 100%;
     height: auto;
     background: var(--white);
-
 }
-
 .question:hover {
     color: var(--green);
     font-size: 1.1rem;
-
 }
-
-
-
 .plan-content {
     width: 85%;
     display: flex;
@@ -108,7 +88,6 @@
     align-items: center;
     overflow-x: auto;
 }
-
 .plan-content2 {
     width: 85%;
     display: flex;
@@ -119,7 +98,6 @@
     align-items: center;
     overflow-x: auto;
 }
-
 .plan-title {
     font-size: var(--font-size-large);
     font-family: var(--font-card);
@@ -128,7 +106,6 @@
     padding: 0.5rem 0;
     text-align: center;
 }
-
 .plans-title,
 .questions-title {
     font-size: var(--font-size-medium);
@@ -138,7 +115,6 @@
     padding-top: 2rem;
     text-align: center;
 }
-
 .plans-description,
 .question-description {
     font-size: var(--font-size-small);
@@ -148,7 +124,6 @@
     padding: 0.5rem;
     text-align: center;
 }
-
 .plan-premium {
     background: #2aa89a;
     width: 70%;
@@ -160,7 +135,6 @@
     display: flex;
     justify-content: center;
 }
-
 .plan {
     display: flex;
     background: var(--blue2);
@@ -174,18 +148,15 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: all 0.3s;
 }
-
 .plan:nth-child(2) {
     background: var(--button);
     color: var(--white);
 }
-
 .check {
     font-size: 1.4rem;
     font-weight: 900;
     padding-inline-end: 0.6rem;
 }
-
 .plan:nth-child(2) .plan-title,
 .plan:nth-child(2) .plan-description,
 .plan:nth-child(2) .plan-itens li,
@@ -193,15 +164,12 @@
 .plan:nth-child(2) .check {
     color: var(--white);
 }
-
 .plan:nth-child(2) .plan-btn {
     border: 2px solid var(--gray);
 }
-
 .plan:hover {
     transform: scale(1.03);
 }
-
 .plan-description {
     /*font-size: var(--font-size-small);*/
     font-size: 0.8rem;
@@ -215,17 +183,14 @@
     line-height: 1rem;
     border-bottom: 2px solid var(--gray);
 }
-
 .plan-itens {
     margin-top: 1.2rem;
     padding: 2rem auto 0 auto;
     line-height: 1rem;
 }
-
 .check {
     color: var(--button);
 }
-
 .plan-itens li {
     list-style: none;
     font-size: var(--font-size-small);
@@ -235,12 +200,10 @@
     padding: 0.5rem 2rem;
     text-align: left;
 }
-
 .plan-prices {
     display: flex;
     flex-direction: column;
 }
-
 .plan-price {
     font-size: var(--font-size-medium);
     font-family: var(--font-card);
@@ -250,7 +213,6 @@
     text-align: center;
     margin: auto;
 }
-
 .plan-btn {
     width: 70%;
     background: var(--button);
@@ -265,7 +227,6 @@
     margin: auto;
     text-decoration: none;
 }
-
 .plan-btn2 {
     width: 70%;
     background: var(--button);
@@ -279,39 +240,29 @@
     text-align: center;
     text-decoration: none;
 }
-
 .arrow4, .arrow5 {
-    display: none;}
-
-
-
-
+    display: none;
+}
 /* Quentions */
 .question-content {
     width: 85%;
     margin: 3rem auto 2rem;
     display: flex;
 }
-
 .question-description {
     font-size: 20px;
     padding-bottom: 30px;
 }
-
 .questions-title,
 .questions-text {
     width: 50%;
 }
-
-
 .question-text {
     width: 100%;
     font-size: var(--font-size-small);
     font-family: var(--font-body);
     margin-bottom: 20px;
-
 }
-
 .question {
     height: 2.5rem;
     text-align: center;
@@ -326,7 +277,6 @@
 .question:hover {
     color:#f0b512;
 }
-
 .question-list,
 .question-answers {
     font-size: var(--font-size-small);
@@ -335,14 +285,12 @@
     padding: 0.2rem 1rem 2rem 2rem;
     color: var(--font-color); 
 }
-
 /* Inicio da area de pagamentos */
 .pagamentos-section {
     width: 100%;
     height: auto;
     background: var(--green);
 }
-
 .pagamentos-container {
     display: flex;
     width: 90%;
@@ -359,7 +307,6 @@
     height: 100%;
     margin: 3rem auto 3rem auto;
     
-
     h1 {
         width:18rem;
         font-size: 1.6rem;
@@ -376,7 +323,6 @@
         font-size: 0.8rem;
     }
 }
-
 .pagamento-container-direito {
     display:flex;
     flex-direction: column;
@@ -402,22 +348,17 @@
     }
 }
 
-
 .pagamento-img-esquerda {
     width: 15rem;
     height: 15rem;
     border-radius:10px;
 }
-
 .pagamento-img-cripto {
     width: 17rem;
     height: 15rem;
     border-radius:10px;
 }
-
-
 /* fim da area de pagamentos */
-
 
 /* Contato */
 .contact {
@@ -426,7 +367,6 @@
     padding: 2rem;
     background: var(--gray-300);
 }
-
 .contact-content {
     width: 85%;
     margin: 1rem auto;
@@ -435,7 +375,6 @@
     justify-content: center;
     flex-direction: row-reverse;
 }
-
 .contact-form {
     width: 50%;
     row-gap: 1rem;
@@ -444,8 +383,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
 .contact-form input {
     border-radius: 1rem;
     padding: 0.8rem 1rem;
@@ -454,7 +391,6 @@
     font-family: var(--font-body);
     width: 375px;
 }
-
 .contact-form textarea {
     border-radius: 1rem;
     padding: 0.8rem 1rem;
@@ -464,19 +400,16 @@
     font-family: var(--font-body);
     width: 375px;
 }
-
 .contact-image {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .contact-img {
     width: 73%;
     border-radius: 10px;
 }
-
 .contact-btn {
     background: var(--button);
     padding: 0.7rem 4rem;
@@ -490,11 +423,9 @@
     font-weight: 500;
     border: none;
 }
-
 .contact-btn:hover {
     transform: scale(1.03);
 }
-
 .contact-title {
     font-size: var(--font-size-medium);
     font-family: var(--font-header);
@@ -503,7 +434,6 @@
     padding: 0 0 2rem 0;
     text-align: center;
 }
-
 /* Inicio - icones fixos na tela */
 .qrcode-site {
     position: absolute;
@@ -514,7 +444,6 @@
     cursor: pointer;
     transition: all 1s ease;
 }
-
 .qrcode-site:hover {
     position: absolute;
     top: 150px;
@@ -522,28 +451,21 @@
     width: 180px;
     height: 180px;
 }
-
-
-
 .whatsapp-content {
     width: 60px;
     display:flex;
     position: relative;
 }
-
 .whatsapp-contato-image {
     position: fixed;
     z-index: 1001;
     right: 20px;
-    bottom: 50px;
-     
+    bottom: 50px;    
 }
-
 .whatsapp-contato-image:hover {
     transform: rotate(90deg) translate(0, 0);
 }
 /* FIM - icones fixos na tela */
-
 .footer {
     width: 100%;
     height:auto;
@@ -554,7 +476,6 @@
     background-image: radial-gradient(#470964, #791fd3);
     z-index:100;
 }
-
 .footer-content {
     width: 100%;
     height: auto;
@@ -567,10 +488,6 @@
     background-color: transparent;
     z-index:100;
 }
-
-
-
-
 .footer-itens {
     display: flex;
     gap: 5rem;
@@ -579,13 +496,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2rem;
-
 }
-
 .footer-itens ul {
     list-style: none;
 }
-
 .footer-title,
 .footer-logo {
     width: 40rem;
@@ -601,15 +515,12 @@
     column-gap: 0.4rem;
     padding: 1rem 0;
 }
-
 .footer-logo span {
     display: flex;
     flex-direction: row;
     padding-right: 1rem;
     gap: 0.5rem;
-
 }
-
 .footer-icons {
     margin: 1rem auto 0 auto;
     list-style: none;
@@ -617,39 +528,31 @@
     justify-content: center;
     display: flex;
 }
-
 .icons-list {
     display: flex;
     gap: 2rem;
 }
-
 .icons-list .icons-links {
     font-size: var(--font-size-xlarge);
     color: var(--white);
 }
-
-
 .img-footer {
     border-radius: 50%;
     margin-bottom: 15px;
 }
-
 .termos1e2 {
     color: #128c7e;
     font-weight: 700;
 }
-
 .termos1e2:hover {
     color: aqua;
 }
-
 .copyright {
     font-size: 14px;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
-
 @media only screen and (max-width: 900px) {
 
     .contact-image,
@@ -696,9 +599,6 @@
         margin: auto;
 
     }
-
-
-
     .question {
         height: 3rem;
         font-weight: 500;
@@ -709,13 +609,10 @@
         color: var(--white);
         border-top: #c2bcbc solid 1px;   
     }
-
     .question:hover {
         font-size: 0.8rem;
         color:#f0b512;
     }
- 
-
 
     /* inicio pagamento responsivo */
     .pagamentos-container {
@@ -768,16 +665,13 @@
     transform: rotate(90deg) translate(0, 0);
 }
 /* FIM - icones fixos na tela */
-
     .footer-itens {
         justify-content: center;
-
     }
 
     .footer-item {
         text-align: center;
         width: 20rem;
-
     }
 
     .footer-icons {
@@ -790,7 +684,6 @@
         justify-content: center;
         flex-direction: row;
         align-items: center;
-
     }
 
     .icons-list {
@@ -798,17 +691,12 @@
         gap: 1rem;
         flex: 1 0;
         flex-direction: row;
-
         flex-wrap: wrap;
         justify-content: center;
     }
-
-
 }
 
 @media only screen and (max-width: 980px) {
-
-
 
     .btn-mobile {
         display: block;
@@ -816,22 +704,16 @@
         background: none;
         margin: 0.3rem;
     }
-
     .btn-mobile.active .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
-
     .btn-mobile.active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .btn-mobile.active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-
-
 }
-
 
 @media only screen and (max-width: 1024px) {
     :root {
@@ -842,21 +724,16 @@
         --font-size-xxlarge: 1.5rem;
         --font-size-xxxlarge: 2.5rem;
     }
-
-
-
     .plans {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
     .plan-content, .plan-content2 {
         width: 90%;
         justify-content: space-between;
         padding: .7rem;
-
         /* Esconde a barra de rolagem Para firefox*/
         scrollbar-width: none;
         /* Esconde a barra de rolagem Para internet explore e edge*/
@@ -874,7 +751,6 @@
         /* Esconde a barra de rolagem Para chromer safari e opera*/
         display: none;
     }
-
     .plan-content2::-webkit-scrollbar {
         /*background: #7446f3;
         border-radius: 20px;*/
@@ -885,11 +761,9 @@
         margin: 0.5rem;
         height: 550px;
     }
-
     .plan-title {
         font-size: var(--font-size-xxlarge);
     }
-
     .arrow4, .arrow5 {
         display: flex;
         width: 100%;
@@ -897,7 +771,6 @@
         align-items: center;
         margin: 1rem auto;
     }
-
     .btn-arrow4, .btn-arrow5 {
         border: none;
         margin: 8px;
@@ -905,11 +778,9 @@
         background: var(--button);
         border-radius: 6px;
     }
-
     .bx {
         font-size: var(--font-size-medium);
         color: var(--white);
         padding: 10px 15px;
     }
-
 }
