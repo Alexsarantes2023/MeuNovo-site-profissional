@@ -73,7 +73,7 @@
         <!--nav-->
         <nav class="nav" aria-label="Menu de navegação">
             <ul class="nav-itens" role="menu">
-                <li role="menuitem"><a rel="canonical" href="/" class="nav-item">Sobre</a></li>
+                <li role="menuitem"><a rel="canonical" href="#init-id" class="nav-item">Sobre</a></li>
                 <li role="menuitem"><a rel="canonical" href="#container2" class="nav-item">Beneficios</a></li>
                 <li role="menuitem"><a rel="canonical" href="#plans" class="nav-item">Planos</a></li>
                 <li role="menuitem"><a rel="canonical" href="#contact" class="nav-item">Contato</a></li>
@@ -96,7 +96,7 @@
         </button>
     </header>
     
-    <section class="container">
+    <section class="container" id="init-id">
         
 
         <div class="list">
@@ -798,19 +798,21 @@
         </div>
     </footer>
 
-</body>
-    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+</body>   
+    <script src="./page-guard.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-
-    <script src="./firebase-init.js"></script>
-
+    <script src="./firebase-init.js"></script> 
     <script src="./mensagens2.js" defer></script>
-    <script src="pages/home/home.js" defer></script>
+    <script src="./pages/home/home.js" defer></script>
+    
 
     <script src="./script.js" defer></script>
     <script src="./scriptcar.js" defer></script>
     <script src="./scripts2.js" defer></script>
     <script src="./scripts3.js" defer></script>
     <script src="./script10.js" defer></script>
+     
+    
 </html>
