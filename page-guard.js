@@ -1,14 +1,14 @@
 // Lista de páginas permitidas
 const paginasPermitidas = [
-    "/",
-    "/index.html",
-    "/login.html",
-    "/pages/home/home.html",
-    "/pages/register/register.html",
-    "/dev-web-fullstack.html",
-    "/cyber-security.html",
-    "/dev-desktop-mobile.html",
-    "/lei_geral_lgpd.html"
+    "alexarantes.com.br/",
+    "alexarantes.com.br/index.html",
+    "alexarantes.com.br/login.html",
+    "alexarantes.com.br/pages/home/home.html",
+    "alexarantes.com.br/pages/register/register.html",
+    "alexarantes.com.br/dev-web-fullstack.html",
+    "alexarantes.com.br/cyber-security.html",
+    "alexarantes.com.br/dev-desktop-mobile.html",
+    "alexarantes.com.br/lei_geral_lgpd.html"
 ];
 
 // Função que verifica se a página atual é permitida
