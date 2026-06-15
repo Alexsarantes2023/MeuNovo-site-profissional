@@ -1,7 +1,8 @@
 // Lista de páginas permitidas
 const paginasPermitidas = [
+    "/",
+    "/index.html",
     "alexarantes.com.br",
-    "alexarantes.com.br/index.html",
     "alexarantes.com.br/login.html",
     "alexarantes.com.br/pages/home/home.html",
     "alexarantes.com.br/pages/register/register.html",
