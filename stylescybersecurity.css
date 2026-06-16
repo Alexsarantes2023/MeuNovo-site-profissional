@@ -220,6 +220,7 @@ h1 {
 .sobre-paragrafo {
     text-align: start;
     font-size: 1rem;
+    color: #fff;
 }
 
 .content-hackers-bem {
@@ -275,6 +276,7 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
+    color: #fff;
 }
 
 
@@ -304,6 +306,7 @@ h1 {
 
 .info-projetos {
     margin-bottom: 5px;
+    color: #ec7373;
 }
 
 .contatos {
@@ -314,6 +317,7 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 50px;
+    color: #fff;
 }
 
 .formulario-contato {
