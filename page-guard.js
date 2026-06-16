@@ -3,7 +3,7 @@ const paginasPermitidas = [
     "/",
     "alexarantes.com.br",
     "/index.html",
-    "alexarantes.com.br/login.html",
+    "/login.html",
     "/pages/home/home.html",
     "/pages/register/register.html",
     "/dev-web-fullstack.html",
