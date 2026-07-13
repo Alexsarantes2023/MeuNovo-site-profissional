@@ -319,7 +319,7 @@
 
     h4 {
         width: 17rem;
-        padding-top: 1rem;
+        padding-top: 1.1rem;
         font-size: 0.8rem;
     }
 }
@@ -331,6 +331,7 @@
     width: 50%;
     height: 100%;
     margin: 3rem auto 3rem auto;
+   
 
     h1 {
         width:18rem;
@@ -350,12 +351,10 @@
 
 .pagamento-img-esquerda {
     width: 15rem;
-    height: 15rem;
     border-radius:10px;
 }
 .pagamento-img-cripto {
-    width: 17rem;
-    height: 15rem;
+    width: 16rem;
     border-radius:10px;
 }
 /* fim da area de pagamentos */
