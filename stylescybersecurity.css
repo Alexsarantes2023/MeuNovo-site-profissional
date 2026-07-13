@@ -1,15 +1,13 @@
-// Aqui estão os css do header, nav do index.html e cybersecurity.html 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
     font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
 }
-
+/* Aqui estão os css do header, nav do index.html e cybersecurity.html */
 :root {
     --font-header: "Poppins", sans-serif;
     --font-body: "Roboto", sans-serif;
