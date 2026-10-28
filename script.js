@@ -1,3 +1,14 @@
+function baixarApk(event) {
+    event.preventDefault();
+
+    const link = document.createElement("a");
+    link.href = "./app-release.apk";
+    link.download = "app-release.apk";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
 const btnMobile = document.getElementById("btn");
 const nav = document.querySelector(".nav");
 const registers = document.querySelector(".registerx");
