@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Desenvolvimento de software desktop e mobile, machine learning e integrações. Do protótipo à publicação.">
+    <meta name="robots" content="index, follow">
+    <title>Dev Desktop & Mobile | Alexsandro A. Arantes</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/usuarioPosts.css">
+    <link rel="stylesheet" href="../css/stylescybersecurity.css">
+    <link rel="stylesheet" href="../css/pages/dev-web.css">
+    <link rel="stylesheet" href="../css/pages/dev-desktop-web.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v6.5.2/js/all.js"></script>
+</head>
+
+<body>
+    <header class="header2">
+        <div id="usuarioInfo"></div>
+        <button type="button" id="logoutBtn">Login</button>
+    </header>
+
+    <header class="header">
+        <div class="logo">
+            <a class="logo-content" href="../index.html">
+                <img class="logoxx" src="../assets/images/img/logo.png" width="50" height="50" alt="logo" />
+                <span class="header-span">Dev : Alexsandro A. Arantes</span>
+            </a>
+        </div>
+        <nav class="nav" aria-label="Menu de navegação">
+            <ul class="nav-itens" role="menu">
+                <li role="menuitem"><a href="../index.html" class="nav-item">Sobre</a></li>
+                <li role="menuitem"><a href="../index.html#container2" class="nav-item">Beneficios</a></li>
+                <li role="menuitem"><a href="../index.html#plans" class="nav-item">Planos</a></li>
+                <li role="menuitem"><a href="../index.html#contact" class="nav-item">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="registerx">
+            <ul class="register-itens">
+                <li role="menulogin"><a href="./login.html" class="register-item">Login</a></li>
+                <li role="menuregister"><a href="./pages/register/register.html" class="register-item">Cadastrar</a></li>
+            </ul>
+        </div>
+
+        <button class="btn-mobile" id="btn" aria-expanded="false" aria-label="Abrir menu" aria-haspopup="true"
+            aria-controls="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <main class="dev-page dev-page-desk">
+        <!-- Hero -->
+        <section class="dev-hero">
+            <div class="dev-hero-conteudo dev-revelar">
+                <span class="dev-eyebrow">Software Desktop & Mobile</span>
+                <h1>Aplicativos que <span>rodam bem</span> em qualquer tela</h1>
+                <p>
+                    Sistemas desktop, apps mobile e recursos de machine learning. Do protótipo à publicação, com foco
+                    em desempenho, usabilidade e código sustentável.
+                </p>
+                <div class="dev-hero-acoes">
+                    <a class="dev-btn dev-btn-primario" href="../index.html#contact">Solicitar orçamento</a>
+                    <a class="dev-btn dev-btn-secundario" href="#servicos">Ver serviços</a>
+                </div>
+                <ul class="dev-hero-stats">
+                    <li><strong>Desktop</strong><span>Windows & Linux</span></li>
+                    <li><strong>Mobile</strong><span>Android & iOS</span></li>
+                    <li><strong>IA</strong><span>Machine Learning</span></li>
+                </ul>
+            </div>
+
+            <div class="dev-hero-visual dev-revelar">
+                <div class="dev-devices">
+                    <div class="dev-laptop">
+                        <div class="dev-laptop-topo">
+                            <span></span><span></span><span></span>
+                            <em>desktop</em>
+                        </div>
+                        <div class="dev-laptop-tela">
+                            <div class="dev-ui-side"></div>
+                            <div class="dev-ui-main">
+                                <span class="dev-ui-linha dev-ui-linha--grande"></span>
+                                <span class="dev-ui-linha"></span>
+                                <div class="dev-ui-cards"><i></i><i></i><i></i></div>
+                                <span class="dev-ui-linha"></span>
+                                <span class="dev-ui-linha dev-ui-linha--curta"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dev-phone">
+                        <div class="dev-phone-notch"></div>
+                        <div class="dev-phone-tela">
+                            <span class="dev-ui-linha dev-ui-linha--grande"></span>
+                            <div class="dev-ui-bolinha"></div>
+                            <span class="dev-ui-linha"></span>
+                            <span class="dev-ui-linha dev-ui-linha--curta"></span>
+                            <span class="dev-phone-btn"></span>
+                        </div>
+                    </div>
+
+                    <span class="dev-tech-badge dev-tech-badge--electron">Electron.js</span>
+                    <span class="dev-tech-badge dev-tech-badge--rn">React Native</span>
+                    <span class="dev-tech-badge dev-tech-badge--kotlin">Kotlin</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section class="dev-secao" id="servicos">
+            <div class="dev-secao-topo dev-revelar">
+                <span class="dev-eyebrow">O que eu faço</span>
+                <h2>Do primeiro protótipo ao app publicado</h2>
+                <p>Projeto, desenvolvimento e evolução de aplicações desktop e mobile.</p>
+            </div>
+
+            <div class="dev-grid-servicos dev-revelar">
+                <article class="dev-servico">
+                    <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+                    <h3>Aplicativos desktop</h3>
+                    <p>Sistemas para Windows e Linux com Electron.js, Java e Python, integrados a banco de dados.</p>
+                </article>
+                <article class="dev-servico">
+                    <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                    <h3>Aplicativos mobile</h3>
+                    <p>Apps para Android e iOS com React Native e Kotlin compilado no Android Studio.</p>
+                </article>
+                <article class="dev-servico">
+                    <i class="fa-solid fa-brain" aria-hidden="true"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Modelos de classificação e visão computacional com Python, TensorFlow e OpenCV.</p>
+                </article>
+                <article class="dev-servico">
+                    <i class="fa-solid fa-plug" aria-hidden="true"></i>
+                    <h3>APIs & integrações</h3>
+                    <p>APIs REST, sincronização de dados e integração com serviços de pagamento e autenticação.</p>
+                </article>
+                <article class="dev-servico">
+                    <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+                    <h3>UI/UX</h3>
+                    <p>Protótipos, fluxos e interfaces consistentes antes de uma linha de código.</p>
+                </article>
+                <article class="dev-servico">
+                    <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+                    <h3>Publicação & suporte</h3>
+                    <p>Build, CI/CD com Git, publicação nas lojas e manutenção evolutiva do aplicativo.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Processo -->
+        <section class="dev-secao dev-processo">
+            <div class="dev-secao-topo dev-revelar">
+                <span class="dev-eyebrow">Como funciona</span>
+                <h2>Do briefing à publicação</h2>
+                <p>Um processo curto, com entregas visíveis em cada etapa.</p>
+            </div>
+            <ol class="dev-passos dev-revelar">
+                <li>
+                    <span>01</span>
+                    <h3>Briefing</h3>
+                    <p>Entendo o problema, o público e as regras do aplicativo.</p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <h3>Protótipo</h3>
+                    <p>Fluxos e telas validadas antes da primeira linha de código.</p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <h3>Desenvolvimento</h3>
+                    <p>Entregas por etapas, com testes a cada versão.</p>
+                </li>
+                <li>
+                    <span>04</span>
+                    <h3>Publicação</h3>
+                    <p>Build, CI/CD com Git, publicação na loja e acompanhamento pós-lançamento.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Stack -->
+        <section class="dev-secao dev-secao-alt">
+            <div class="dev-secao-topo dev-revelar">
+                <span class="dev-eyebrow">Stack</span>
+                <h2>Tecnologias que uso no dia a dia</h2>
+                <p>Escolhidas pelo problema, não pela moda.</p>
+            </div>
+            <ul class="dev-stack dev-revelar">
+                <li>Electron.js</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Kotlin</li>
+                <li>Android Studio</li>
+                <li>Swift</li>
+                <li>React Native</li>
+                <li>TensorFlow</li>
+                <li>OpenCV</li>
+                <li>SQLite</li>
+                <li>PostgreSQL</li>
+                <li>Git</li>
+                <li>GitHub Actions</li>
+                <li>CI/CD</li>
+                <li>Docker</li>
+                <li>Firebase</li>
+                <li>REST</li>
+            </ul>
+        </section>
+
+        <!-- Vídeos -->
+        <section class="dev-secao dev-secao-video" id="videos">
+            <div class="dev-secao-topo dev-revelar">
+                <span class="dev-eyebrow">Projetos em vídeo</span>
+                <h2>Veja alguns aplicativos em funcionamento</h2>
+                <p>Clique na capa para assistir sem sair da página.</p>
+            </div>
+
+            <div class="dev-videos dev-revelar">
+                <article class="dev-video-card" data-video="lIQLTy6F5_Y">
+                    <button class="dev-video-play" type="button" aria-label="Assistir ao vídeo Devbills, aplicativo de gestão financeira">
+                        <img src="https://img.youtube.com/vi/lIQLTy6F5_Y/hqdefault.jpg"
+                            alt="Capa do vídeo Devbills, aplicativo de gestão financeira" loading="lazy" decoding="async">
+                        <span class="dev-video-icone"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                    </button>
+                    <h3>Devbills — gestão financeira</h3>
+                </article>
+
+                <article class="dev-video-card" data-video="w0q2ZN6v-iM">
+                    <button class="dev-video-play" type="button" aria-label="Assistir ao vídeo Agenda com Banco de Dados">
+                        <img src="https://img.youtube.com/vi/w0q2ZN6v-iM/hqdefault.jpg"
+                            alt="Capa do vídeo Agenda com Banco de Dados" loading="lazy" decoding="async">
+                        <span class="dev-video-icone"><i class="fa-solid fa-play" aria-hidden="true"></i></span>
+                    </button>
+                    <h3>Agenda com Banco de Dados</h3>
+                </article>
+            </div>
+
+            <a class="dev-video-canal" href="https://www.youtube.com/@alexsarantes" target="_blank" rel="noopener">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i> Ver mais vídeos no canal
+            </a>
+        </section>
+
+        <!-- CTA -->
+        <section class="dev-cta dev-revelar">
+            <h2>Tem um aplicativo em mente?</h2>
+            <p>Conte a ideia e receba uma proposta com escopo, prazo e valor.</p>
+            <div class="dev-hero-acoes">
+                <a class="dev-btn dev-btn-primario" href="../index.html#contact">Pedir orçamento</a>
+                <a class="dev-btn dev-btn-secundario" href="https://wa.me/13982237027?text=Quero%20contratar!">Falar no
+                    WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="whatsapp-content">
+        <a href="https://wa.me/13982237027?text=Quero%20contratar!"><img src="../assets/images/img/whatsapp.png"
+                alt="whatsapp" class="whatsapp-contato-image" width="60"></a>
+    </div>
+
+    <!-- footer-->
+    <footer class="footer">
+        <section class="footer-content">
+
+            <div class="footer-itens">
+
+                <article class="footer-item">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li>Atendimento ilimitado</li>
+                        <li>Responsividade Mobile</li>
+                        <li>Google SEO</li>
+                        <li>Google Analytics</li>
+                    </ul>
+                </article>
+
+                <article class="footer-item">
+                    <h3>Integrações</h3>
+                    <ul>
+                        <li>Pagamento Pix</li>
+                        <li>Cartão de Crédito</li>
+                        <li>Pagamento em Bitcoin</li>
+                        <li>Boletos</li>
+                    </ul>
+                </article>
+
+                <article class="footer-item">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>alexsarantes2023@gmail.com</li>
+                        <li>13 98223-7027</li>
+                        <li>Santos - SP</li>
+                    </ul>
+                </article>
+
+                <article class="footer-item">
+                    <h3>Termos</h3>
+                    <ul>
+                        <li>Politica de Privacidade</li>
+                        <li><a href="./lei_geral_lgpd.html" class="termos1e2">Termo de Uso</a></li>
+                    </ul>
+                    <ul>
+                        <li>Lei Geral da Proteção de Dados</li>
+                        <li><a href="./lei_geral_lgpd.html" class="termos1e2">Termo de Uso Da LGPD</a></li>
+                    </ul>
+                </article>
+            </div>
+
+            <article class="footer-social">
+                <a href="../index.html" class="footer-logo">
+                    <h4 class="footer-title">Contato</h4>
+                    <img class="img-footer" src="../assets/images/img/logo.png" alt="logo" height="45" width="45" />
+                    <span>
+                        Developer
+                        <p>& CyberSecurity</p>
+                    </span>
+                </a>
+
+                <ul class="footer-icons">
+                    <li class="icons-list">
+                        <a href="https://www.instagram.com/alexarantes.com.br/profilecard/?igsh=MXBhYXVicmR5bWF5ZQ=="
+                            class="icons-links" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/H7CNYT1acPgpybhQ/" class="icons-links"
+                            aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.link/qu0ysc" class="icons-links" aria-label="whatsapp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@alexsarantes" class="icons-links" aria-label="youtube"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://br.linkedin.com/in/alexsandro-antonio-arantes" class="icons-links"
+                            aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://discord.gg/Arantes6751" class="icons-links" aria-label="discord"><i
+                                class="fa-brands fa-discord"></i></a>
+                        <a href="https://github.com/Alexsarantes2023" class="icons-links" aria-label="github"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/Alexsarantes" class="icons-links" aria-label="twitter"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.roblox.com/pt/users/7135588010/profile" class="icons-links"
+                            aria-label="roblox"><i class="fa-solid fa-r"></i></a>
+                        <a href="../index.html#contact" class="icons-links" aria-label="email"><i
+                                class="fa-regular fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <div class="copyright">
+            &copy; 2025 Alexsandro A. Arantes. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="../js/firebase-init.js"></script>
+    <script src="../js/script.js" defer></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            if (typeof animarAoRolar === 'function') {
+                document.querySelectorAll('.dev-revelar').forEach(function (elemento) {
+                    animarAoRolar(elemento, 'animar-dev');
+                });
+            }
+
+            document.querySelectorAll('.dev-video-card').forEach(function (card) {
+                var botao = card.querySelector('.dev-video-play');
+                if (!botao) return;
+
+                botao.addEventListener('click', function () {
+                    var id = card.getAttribute('data-video');
+                    var titulo = card.querySelector('h3');
+                    var frame = document.createElement('iframe');
+
+                    frame.className = 'dev-video-frame';
+                    frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+                    frame.title = titulo ? titulo.textContent : 'Vídeo do YouTube';
+                    frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                    frame.referrerPolicy = 'strict-origin-when-cross-origin';
+                    frame.allowFullscreen = true;
+
+                    botao.replaceWith(frame);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

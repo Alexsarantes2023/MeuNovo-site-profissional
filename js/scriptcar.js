@@ -1,0 +1,67 @@
+(function () {
+    let prevButton = document.getElementById('prev')
+    let nextButton = document.getElementById('next')
+    let container1 = document.querySelector('.container')
+    let items = container1.querySelectorAll('.list .item')
+    let indicator = document.querySelector('.indicators')
+    let dots = indicator.querySelectorAll('ul li')
+    let list = container1.querySelector('.list')
+
+    let active = 0
+    let firstPosition = 0
+    let lastPosition = items.length - 1
+
+    // Tempo de cada troca automatica do carrossel principal
+    const INTERVALO_AUTOPLAY = 6000;
+    let autoplayId = null;
+
+    function setSlider() {
+        let itemOld = container1.querySelector('.list .item.active')
+        itemOld.classList.remove('active')
+
+        let dotsOld = indicator.querySelector('ul li.active')
+        dotsOld.classList.remove('active')
+        dots[active].classList.add('active')
+
+        indicator.querySelector('.number').innerHTML = '0' + (active + 1)
+    }
+
+    function avancar() {
+        list.style.setProperty('--calculation', 1)
+        active = active + 1 > lastPosition ? 0 : active + 1
+        setSlider()
+        items[active].classList.add('active')
+    }
+
+    function voltar() {
+        list.style.setProperty('--calculation', -1)
+        active = active - 1 < firstPosition ? lastPosition : active - 1
+        setSlider()
+        items[active].classList.add('active')
+    }
+
+    function pararAutoplay() {
+        if (autoplayId !== null) {
+            clearInterval(autoplayId)
+            autoplayId = null
+        }
+    }
+
+    function iniciarAutoplay() {
+        pararAutoplay()
+        autoplayId = setInterval(avancar, INTERVALO_AUTOPLAY)
+    }
+
+    // Clique manual reinicia a contagem
+    nextButton.onclick = () => {
+        avancar()
+        iniciarAutoplay()
+    }
+
+    prevButton.onclick = () => {
+        voltar()
+        iniciarAutoplay()
+    }
+
+    iniciarAutoplay()
+})();

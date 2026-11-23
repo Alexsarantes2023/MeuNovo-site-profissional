@@ -1,0 +1,13 @@
+/* Ajustes exclusivos de dev-desktop-mobile (antes: styles8.css) */
+.logo-description1 {
+    width: 60%;
+    margin: auto;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-description1 {
+        width: 90%;
+        margin: auto;
+    }
+}

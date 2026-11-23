@@ -1,9 +1,25 @@
-# MeuNovo-site-profissional
-Meu Novo Site Profissional - https://www.alexarantes.com.br
-<br>
-<h1>Informe para o Leitor Estudante</h1>
-<h2>Meu site é conceitual para estudos, não garantindo segurança da informação</h2>
-<h3>Conceitual vanila puro - javascript - conexão com - firebase auth e storage</h3>
-<h4>Altamente vulneravel, códigos js expostos podendo resolver isso configurando o servidor para bloquear arquivos de configuração e criptografar a pagina.</h4>
-<h3>Codigo liberado publicamente para analize e estudo</h3>
-<h3>O ideal para aumento da segurança é refazer tudo em react, next.js e node com proteções especificas.</h3>
+# Projeto limpo
+
+Versao reorganizada do site, mantendo apenas as paginas e os recursos locais
+referenciados pelo site e suas dependencias.
+
+## Estrutura
+
+- `index.html`: pagina principal e ponto de entrada.
+- `login.html`: redirecionamento de compatibilidade para `html/login.html`.
+- `html/`: demais paginas do site.
+- `css/`: folhas de estilo.
+- `js/`: scripts.
+- `assets/images/`: imagens utilizadas.
+- `assets/videos/`: videos utilizados.
+- `downloads/`: aplicativo Android para download.
+
+Os caminhos internos foram atualizados para a nova estrutura. O JavaScript
+continua separado em `js/`; redirecionamentos relativos sao resolvidos em
+relacao a pagina HTML que os carrega.
+
+## Como abrir
+
+Sirva esta pasta com um servidor estatico local e abra `index.html`. Login,
+cadastro e mensagens dependem dos servicos Firebase configurados no projeto.
+O endereço antigo `/login.html` redireciona para `html/login.html`.

@@ -1,0 +1,282 @@
+/* ===== Variante visual: Dev Desktop & Mobile ===== */
+
+.dev-page-desk .dev-eyebrow {
+    color: #67e8f9;
+    border-color: rgba(103, 232, 249, 0.25);
+}
+
+.dev-page-desk .dev-hero h1 span {
+    background: linear-gradient(90deg, #22d3ee, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.dev-page-desk .dev-btn-primario {
+    background: linear-gradient(135deg, #0891b2, #2563eb);
+    box-shadow: 0 12px 28px rgba(8, 145, 178, 0.4);
+}
+
+.dev-page-desk .dev-btn-primario:hover {
+    box-shadow: 0 16px 34px rgba(8, 145, 178, 0.5);
+}
+
+.dev-page-desk .dev-servico i {
+    background: linear-gradient(135deg, #0891b2, #2563eb);
+}
+
+/* ---------- Vitrine de dispositivos ---------- */
+.dev-devices {
+    position: relative;
+    padding: 1.5rem 0 3rem;
+}
+
+.dev-laptop {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(160deg, #10202b, #0a121c);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.dev-laptop-topo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 0.9rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dev-laptop-topo span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ff5f57;
+}
+
+.dev-laptop-topo span:nth-child(2) {
+    background: #febc2e;
+}
+
+.dev-laptop-topo span:nth-child(3) {
+    background: #28c840;
+}
+
+.dev-laptop-topo em {
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.7rem;
+    font-style: normal;
+}
+
+.dev-laptop-tela {
+    display: flex;
+    gap: 0.7rem;
+    min-height: 230px;
+    padding: 1rem;
+    background: radial-gradient(120% 120% at 80% 0%, rgba(34, 211, 238, 0.12), transparent 60%);
+}
+
+.dev-ui-side {
+    width: 56px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.dev-ui-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.dev-ui-linha {
+    display: block;
+    height: 9px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.dev-ui-linha--grande {
+    width: 70%;
+    height: 13px;
+    background: rgba(103, 232, 249, 0.45);
+}
+
+.dev-ui-linha--curta {
+    width: 45%;
+}
+
+.dev-ui-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin: 0.3rem 0;
+}
+
+.dev-ui-cards i {
+    display: block;
+    height: 54px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.dev-phone {
+    position: absolute;
+    right: -6px;
+    bottom: 0;
+    width: 130px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(170deg, #0e1b26, #081019);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+}
+
+.dev-phone-notch {
+    width: 46px;
+    height: 6px;
+    margin: 0 auto 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.dev-phone-tela {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    height: 100%;
+}
+
+.dev-ui-bolinha {
+    width: 56px;
+    height: 56px;
+    margin: 0.3rem auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0891b2, #2563eb);
+}
+
+.dev-phone-btn {
+    height: 26px;
+    margin-top: auto;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #22d3ee, #2563eb);
+}
+
+.dev-tech-badge {
+    position: absolute;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(103, 232, 249, 0.35);
+    background: rgba(8, 15, 22, 0.9);
+    color: #a5f3fc;
+    font-size: 0.72rem;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.dev-tech-badge--electron {
+    top: 0.4rem;
+    left: -8px;
+}
+
+.dev-tech-badge--rn {
+    top: 42%;
+    right: -10px;
+}
+
+.dev-tech-badge--kotlin {
+    bottom: -6px;
+    left: 18%;
+}
+
+/* ---------- Servicos numerados ---------- */
+.dev-page-desk .dev-grid-servicos {
+    counter-reset: servico;
+}
+
+.dev-page-desk .dev-servico {
+    counter-increment: servico;
+    position: relative;
+}
+
+.dev-page-desk .dev-servico::before {
+    content: counter(servico, decimal-leading-zero);
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    color: rgba(103, 232, 249, 0.22);
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* ---------- Passos ---------- */
+.dev-passos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dev-passos li {
+    position: relative;
+    padding-top: 1.6rem;
+}
+
+.dev-passos li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(34, 211, 238, 0.7), rgba(37, 99, 235, 0.2));
+}
+
+.dev-passos span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #67e8f9;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+}
+
+.dev-passos h3 {
+    margin: 0 0 0.35rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.dev-passos p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .dev-passos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dev-phone {
+        right: -2px;
+        width: 104px;
+        height: 200px;
+    }
+
+    .dev-tech-badge--rn {
+        right: -2px;
+    }
+
+    .dev-passos {
+        grid-template-columns: 1fr;
+    }
+}

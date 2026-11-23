@@ -4,43 +4,26 @@
 
   <url>
        <loc>https://alexarantes.com.br/</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
        <changefreq>monthly</changefreq>
        <priority>1.0000</priority>
   </url>
   <url>
-       <loc>https://alexarantes.com.br/login</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
+       <loc>https://alexarantes.com.br/html/dev-web-fullstack.html</loc>
        <changefreq>monthly</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://alexarantes.com.br/pages/register/register</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
+       <loc>https://alexarantes.com.br/html/dev-desktop-mobile.html</loc>
        <changefreq>monthly</changefreq>
        <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://alexarantes.com.br/dev-web-fullstack</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://alexarantes.com.br/dev-desktop-mobile</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
-       <changefreq>monthly</changefreq>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://alexarantes.com.br/cyber-security</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
+       <loc>https://alexarantes.com.br/html/cyber-security.html</loc>
        <changefreq>monthly</changefreq>
        <priority>0.9000</priority>
   </url>
   <url>
-       <loc>https://alexarantes.com.br/lei_geral_lgpd</loc>
-       <lastmod>2026-08-22T21:09:00+00:00</lastmod>
+       <loc>https://alexarantes.com.br/html/lei_geral_lgpd.html</loc>
        <changefreq>monthly</changefreq>
        <priority>0.8000</priority>
   </url>

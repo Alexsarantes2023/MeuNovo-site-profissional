@@ -1,6 +1,10 @@
-teste/
+# Metadados da ferramenta Kilo (nao fazem parte do site)
+.kilo/
 
+# Arquivos de sistema
+Thumbs.db
+desktop.ini
+.DS_Store
 
-
-
-
+# Logs
+*.log

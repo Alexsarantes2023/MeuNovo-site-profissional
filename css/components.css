@@ -1,0 +1,789 @@
+/* cards  */
+.cards {
+    width: 100%;
+    background: var(--white);
+}
+.card-content {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.cards-title {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-header);
+    color: var(--font-color);
+    font-weight: 900;
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+}
+.card {
+    width: 100%;
+    display: flex;
+    margin: 1.5rem 1rem 4rem;
+    justify-content: space-between;
+}
+.card:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.card:nth-child(2) .card-title,
+.card:nth-child(2) .card-description {
+    text-align: end;
+}
+.card-image {
+    display: flex;
+    width: 400px;
+    height: 275px;
+    border-radius: 10px;
+    border: 2px solid var(--gray);
+    box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 4px;
+}
+.card-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-title {
+    font-size: var(--font-size-small);
+    font-family: var(--font-header);
+    color: var(--font-color);
+    font-weight: 900;
+    padding: 8rem auto;
+}
+.card-description {
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    color: var(--font-color);
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
+.card-text {
+    width: 70%;
+    display: flex;
+    padding: 0 4rem;
+    justify-content: center;
+    flex-direction: column;
+}
+.arrow3,
+.btn-mobile {
+    display: none;
+}
+/* Plano */
+.plans,
+.questions {
+    width: 100%;
+    height: auto;
+    background: var(--white);
+}
+
+.plan-content {
+    width: 85%;
+    display: flex;
+    column-gap: 2rem;
+    padding: 2rem 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+.plan-content2 {
+    width: 85%;
+    display: flex;
+    column-gap: 2rem;
+    padding: 2rem 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+.plan-title {
+    font-size: var(--font-size-large);
+    font-family: var(--font-card);
+    color: var(--font-color);
+    font-weight: 700;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.plans-title,
+.questions-title {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-header);
+    color: var(--font-color);
+    font-weight: 900;
+    padding-top: 2rem;
+    text-align: center;
+}
+.plans-description,
+.question-description {
+    font-size: var(--font-size-small);
+    font-family: var(--font-header);
+    color: var(--font-color);
+    font-weight: 400;
+    padding: 0.5rem;
+    text-align: center;
+}
+.plan-premium {
+    background: #2aa89a;
+    width: 70%;
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    font-size: var(--font-size-small);
+    font-family: var(--font-header);
+    margin: 0 auto 0.5rem auto;
+    display: flex;
+    justify-content: center;
+}
+.plan {
+    display: flex;
+    background: var(--blue2);
+    flex: 0 0 348px;
+    height: 550px;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    padding: 2rem 0;
+    cursor: grab;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.3s;
+}
+.plan:nth-child(2) {
+    background: var(--button);
+    color: var(--white);
+}
+.check {
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-inline-end: 0.6rem;
+    color: var(--button);
+}
+.plan:nth-child(2) .plan-title,
+.plan:nth-child(2) .plan-description,
+.plan:nth-child(2) .plan-itens li,
+.plan:nth-child(2) .plan-price,
+.plan:nth-child(2) .check {
+    color: var(--white);
+}
+.plan:nth-child(2) .plan-btn {
+    border: 2px solid var(--gray);
+}
+.plan:hover {
+    transform: scale(1.03);
+}
+.plan-description {
+    /*font-size: var(--font-size-small);*/
+    font-size: 0.8rem;
+    font-family: var(--font-body);
+    color: var(--font-color);
+    font-weight: 400;
+    padding: 0 0 0.5rem 0;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    line-height: 1rem;
+    border-bottom: 2px solid var(--gray);
+}
+.plan-itens {
+    margin-top: 1.2rem;
+    padding: 2rem auto 0 auto;
+    line-height: 1rem;
+}
+
+.plan-itens li {
+    list-style: none;
+    font-size: var(--font-size-small);
+    font-family: var(--font-header);
+    color: var(--font-color);
+    font-weight: 500;
+    padding: 0.5rem 2rem;
+    text-align: left;
+}
+.plan-prices {
+    display: flex;
+    flex-direction: column;
+}
+.plan-price {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-card);
+    color: var(--font-color);
+    font-weight: 900;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin: auto;
+}
+.plan-btn {
+    width: 70%;
+    background: var(--button);
+    padding: 0.5rem 1.5rem;
+    color: var(--white);
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+}
+.plan-btn2 {
+    width: 70%;
+    background: var(--button);
+    padding: 0.5rem 1.5rem;
+    color: var(--white);
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+.arrow4, .arrow5 {
+    display: none;
+}
+/* Quentions */
+.question-content {
+    width: 85%;
+    margin: 3rem auto 2rem;
+    display: flex;
+}
+.question-description {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.questions-title,
+.questions-text {
+    width: 50%;
+}
+.question-text {
+    width: 100%;
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    margin-bottom: 20px;
+}
+.question {
+    height: 2.5rem;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--white);
+    border-top: #c2bcbc solid 1px;
+    border-radius: 10px;
+    background: linear-gradient(70deg, rgb(100, 143, 114), rgb(78, 160, 67));
+}
+.question:hover {
+    color:#f0b512;
+    font-size: 1.1rem;
+}
+.question-list,
+.question-answers {
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    font-weight: 400;
+    padding: 0.2rem 1rem 2rem 2rem;
+    color: var(--font-color); 
+}
+/* Inicio da area de pagamentos */
+.pagamentos-section {
+    width: 100%;
+    height: auto;
+    background: var(--green);
+}
+.pagamentos-container {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin-left:auto;
+    margin-right: auto;
+}
+.pagamento-container-esquerdo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 3rem auto 3rem auto;
+    
+    h1 {
+        width:18rem;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: var(--font-header);
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 2rem;
+    }	
+
+    h4 {
+        width: 17rem;
+        padding-top: 1.1rem;
+        font-size: 0.8rem;
+    }
+}
+.pagamento-container-direito {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 3rem auto 3rem auto;
+   
+
+    h1 {
+        width:18rem;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: var(--font-header);
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 2rem;
+    }
+
+    h4 {
+        padding-top: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+.pagamento-img-esquerda {
+    width: 15rem;
+    border-radius:10px;
+}
+.pagamento-img-cripto {
+    width: 16rem;
+    border-radius:10px;
+}
+/* fim da area de pagamentos */
+
+/* Contato */
+.contact {
+    width: 100%;
+    height: 34.5rem;
+    padding: 2rem;
+    background: var(--gray-300);
+}
+.contact-content {
+    width: 85%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.contact-form {
+    width: 50%;
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form input {
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    font-size: var(--font-size-medium);
+    border: solid 1px var(--gray-300);
+    font-family: var(--font-body);
+    width: 375px;
+}
+.contact-form textarea {
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    height: 190px;
+    font-size: var(--font-size-medium);
+    border: solid 1px var(--gray-300);
+    font-family: var(--font-body);
+    width: 375px;
+}
+.contact-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-img {
+    width: 73%;
+    border-radius: 10px;
+}
+.contact-btn {
+    background: var(--button);
+    padding: 0.7rem 4rem;
+    margin-top: 15px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: var(--font-size-small);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+}
+.contact-btn:hover {
+    transform: scale(1.03);
+}
+.contact-title {
+    font-size: var(--font-size-medium);
+    font-family: var(--font-header);
+    color: var(--font-color);
+    font-weight: 900;
+    padding: 0 0 2rem 0;
+    text-align: center;
+}
+/* Inicio - icones fixos na tela */
+.qrcode-site {
+    position: absolute;
+    top: 150px;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.qrcode-site:hover {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 140px;
+    height: 140px;
+}
+@media only screen and (max-width: 900px) {
+
+    .contact-image,
+    .contact-img,
+    .card-image,
+    .card-img,
+    .nav,
+    .register {
+        display: none;
+    }
+
+    /*Inicio da responsividade do qrcode */
+    .qrcode-site {
+        position: absolute;
+        top: 135px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    
+    .qrcode-site:hover {
+        position: absolute;
+        top: 150px;
+        left: 15px;
+        width: 140px;
+        height: 140px;
+    }
+    /*fim da responsividade do qrcode */
+
+    .question-content {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        margin: 3rem auto 2.1rem;
+    }
+
+    .questions-title,
+    .questions-text {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .question {
+        height: 3rem;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 10px;
+        cursor: pointer;
+        color: var(--white);
+        border-top: #c2bcbc solid 1px;   
+    }
+    .question:hover {
+        font-size: 0.8rem;
+        color:#f0b512;
+    }
+
+    /* inicio pagamento responsivo */
+    .pagamentos-container {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-left:auto;
+        margin-right: auto;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    /* fim pagamento responsivo */
+
+
+/* Inicio - icones fixos na tela */
+/*.android-image {
+    width: 50px;
+    position: fixed;
+    z-index: 1001;
+    right: 15px;
+    top: 130px;
+    cursor: pointer;
+    border-radius: 20%;
+    
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+.android-image:hover {
+    border: 2px dashed #fff;
+}*/
+
+.whatsapp-content {
+    width: 55px;
+    display:flex;
+    position: relative;
+}
+
+.whatsapp-contato-image {
+    position: fixed;
+    z-index: 1001;
+    right: 10px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.whatsapp-contato-image:hover {
+    transform: rotate(90deg) translate(0, 0);
+}
+/* FIM - icones fixos na tela */
+    .footer-itens {
+        justify-content: center;
+    }
+
+    .footer-item {
+        text-align: center;
+        width: 20rem;
+    }
+
+    .footer-icons {
+        width: 40%;
+        height: 50px;
+        margin: 1rem auto;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .icons-list {
+        display: flex;
+        gap: 1rem;
+        flex: 1 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    .btn-mobile {
+        display: block;
+        border: none;
+        background: none;
+        margin: 0.3rem;
+    }
+    .btn-mobile.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .btn-mobile.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .btn-mobile.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    :root {
+        --font-size-small: 1rem;
+        --font-size-medium: 1.2rem;
+        --font-size-large: 1rem;
+        --font-size-xlarge: 1.5rem;
+        --font-size-xxlarge: 1.5rem;
+        --font-size-xxxlarge: 2.5rem;
+    }
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .plan-content, .plan-content2 {
+        width: 90%;
+        justify-content: space-between;
+        padding: .7rem;
+        /* Esconde a barra de rolagem Para firefox*/
+        scrollbar-width: none;
+        /* Esconde a barra de rolagem Para internet explore e edge*/
+        -ms-overflow-style: none;
+
+        /* Esconde a barra de rolagem e manter a funcinalidade
+        overflow: whidden;*/
+        /* Mantém a funcionalidade de rolagem vertical e manter a funcinalidade
+        overflow-y: scroll;
+        margin-left: 0;*/
+    }
+    .plan-content::-webkit-scrollbar {
+        /*background: #7446f3;
+        border-radius: 20px;*/
+        /* Esconde a barra de rolagem Para chromer safari e opera*/
+        display: none;
+    }
+    .plan-content2::-webkit-scrollbar {
+        /*background: #7446f3;
+        border-radius: 20px;*/
+        /* Esconde a barra de rolagem Para chromer safari e opera*/
+        display: none;
+    }
+    .plan {
+        margin: 0.5rem;
+        height: 550px;
+    }
+    .plan-title {
+        font-size: var(--font-size-xxlarge);
+    }
+    .arrow4, .arrow5 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+    }
+    .btn-arrow4, .btn-arrow5 {
+        border: none;
+        margin: 8px;
+        cursor: pointer;
+        background: var(--button);
+        border-radius: 6px;
+    }
+    .bx {
+        font-size: var(--font-size-medium);
+        color: var(--white);
+        padding: 10px 15px;
+    }
+}
+
+/* Espacamento dos icones do rodape (mantido do antigo styles3.css;
+   cyber-security e login nao carregam este arquivo e nao tinham esse margin) */
+.footer-icons {
+    margin: 1rem auto 0 auto;
+}
+/* Perguntas frequentes: cada item surge da direita, um de cada vez */
+.questions-text.animar-perguntas .question-text {
+    opacity: 0;
+    transform: translateX(48px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.questions-text.animar-perguntas.visivel .question-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.questions-text.animar-perguntas.visivel .question-text:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.questions-text.animar-perguntas.visivel .question-text:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.questions-text.animar-perguntas.visivel .question-text:nth-child(3) {
+    transition-delay: 0.30s;
+}
+
+.questions-text.animar-perguntas.visivel .question-text:nth-child(4) {
+    transition-delay: 0.45s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .questions-text.animar-perguntas .question-text {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+/* Contato: imagem entra pela esquerda e formulario pela direita */
+.contact.animar-contato .contact-title {
+    opacity: 0;
+    transform: translateY(-16px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.contact.animar-contato .contact-image {
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contact.animar-contato .contact-form {
+    opacity: 0;
+    transform: translateX(70px);
+    transition: opacity 0.8s ease 0.1s, transform 0.8s ease 0.1s;
+}
+
+.contact.animar-contato.visivel .contact-title,
+.contact.animar-contato.visivel .contact-image,
+.contact.animar-contato.visivel .contact-form {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact.animar-contato .contact-title,
+    .contact.animar-contato .contact-image,
+    .contact.animar-contato .contact-form {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+/* Pagamentos: cada QRCode entra de um lado, em tempo curto */
+.pagamentos-section.animar-pagamentos .pagamento-container-esquerdo,
+.pagamentos-section.animar-pagamentos .pagamento-container-direito {
+    opacity: 0;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.pagamentos-section.animar-pagamentos .pagamento-container-esquerdo {
+    transform: translateX(60px);
+}
+
+.pagamentos-section.animar-pagamentos .pagamento-container-direito:nth-child(2) {
+    transform: translateX(-60px);
+}
+
+.pagamentos-section.animar-pagamentos .pagamento-container-direito:nth-child(3) {
+    transform: translateX(60px);
+}
+
+.pagamentos-section.animar-pagamentos.visivel .pagamento-container-esquerdo,
+.pagamentos-section.animar-pagamentos.visivel .pagamento-container-direito {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pagamentos-section.animar-pagamentos .pagamento-container-esquerdo,
+    .pagamentos-section.animar-pagamentos .pagamento-container-direito {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

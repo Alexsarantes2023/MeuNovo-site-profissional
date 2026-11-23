@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="styles3.css">
-    <link rel="stylesheet" href="stylescybersecurity.css">
-    <link rel="stylesheet" href="usuarioPosts.css">
+    <link rel="stylesheet" href="./css/style.css?v=5">
+    <link rel="stylesheet" href="./css/pages/beneficios.css?v=5">
+    <link rel="stylesheet" href="./css/components.css?v=8">
+    <link rel="stylesheet" href="./css/stylescybersecurity.css">
+    <link rel="stylesheet" href="./css/usuarioPosts.css">
+    <link rel="stylesheet" href="./css/mensagens.css">
+    <link rel="stylesheet" href="./css/postagens.css?v=9">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500;700&display=swap"
@@ -31,28 +33,23 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="https://alexarantes.com.br/" />
     <meta property="og:title" content="Alexsandro Arantes - Full Stack Developer" />
     <meta property="og:description"
         content="Desenvolvedor Fustack profissional web, desktop, mobile, I.A, e Cyber Threat Intelligence com respostas a incidentes e forense" />
-    <meta property="og:image" content="img/DSC00112.svg" />
+    <meta property="og:image" content="https://alexarantes.com.br/assets/images/img/DSC00112.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="/" />
+    <meta property="twitter:url" content="https://alexarantes.com.br/" />
     <meta property="twitter:title" content="Alexsandro Arantes - Full Stack Developer" />
     <meta property="twitter:description"
         content="Desenvolvedor Fustack profissional web, desktop, mobile, I.A, e Cyber Threat Intelligence com respostas a incidentes e forense" />
-    <meta property="twitter:image" content="img/DSC00112.svg" />
+    <meta property="twitter:image" content="https://alexarantes.com.br/assets/images/img/DSC00112.png" />
 
-    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/images/img/logo.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;900&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet" />
     <script defer src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" defer></script>
 
 <!-- Google Tag Manager -->
@@ -74,15 +71,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!--Header login-->
     <header class="header2">
         <div id="usuarioInfo"></div>
-        <button type="button" id="logoutBtn" onClick="logout()">Exit</button>
+        <button type="button" id="logoutBtn">Login</button>
     </header>
 
     <!--Header logo e menu-->
     <header class="header">
         <!--logo-->
         <div class="logo">
-            <a class="logo-content" rel="canonical" href="/">
-                <img class="logoxx" src="img/logo.png" width="50" height="50" alt="logo" />
+            <a class="logo-content" rel="canonical" href="./index.html">
+                <img class="logoxx" src="./assets/images/img/logo.png" width="50" height="50" alt="logo" />
                 <span class="header-span">Dev : Alexsandro A. Arantes</span>
             </a>
         </div>
@@ -92,13 +89,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li role="menuitem"><a rel="canonical" href="#init-id" class="nav-item">Sobre</a></li>
                 <li role="menuitem"><a rel="canonical" href="#container2" class="nav-item">Beneficios</a></li>
                 <li role="menuitem"><a rel="canonical" href="#plans" class="nav-item">Planos</a></li>
+                <li role="menuitem"><a rel="canonical" href="#plans2" class="nav-item">Gestor de Trafego</a></li>
                 <li role="menuitem"><a rel="canonical" href="#contact" class="nav-item">Contato</a></li>
             </ul>
         </nav>
         <div class="registerx">
             <ul class="register-itens">
-                <li role="menulogin"><a rel="canonical" href="login.html" class="register-item">Login</a></li>
-                <li role="menuregister"><a rel="canonical" href="pages/register/register.html"
+                <li role="menulogin"><a rel="canonical" href="./html/login.html" class="register-item">Login</a></li>
+                <li role="menuregister"><a rel="canonical" href="./html/pages/register/register.html"
                         class="register-item">Cadastrar</a></li>
             </ul>
         </div>
@@ -117,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="item active">
                 <div class="car-img">
-                    <img src="./img/logo.png" alt="imagem logo">
+                    <img src="./assets/images/img/logo.png" alt="imagem logo">
                 </div>
                 <div class="content">
                     <p class="car-information">
@@ -133,7 +131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         habilidades em diversas
                         linguagens de programação e frameworks.
                     </p>
-                    <!--  <button onclick="window.location.href='dev-web-fullstack.html'" class="information">
+                    <!--  <button onclick="window.location.href='./html/dev-web-fullstack.html'" class="information">
                     Saiba Mais
                     </button>-->
 
@@ -143,7 +141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="item">
                 <div class="car-img">
-                    <img src="./img/DSC_0495.png" alt="imagem">
+                    <img src="./assets/images/img/DSC_0495.png" alt="imagem">
                 </div>
                 <div class="content">
                     <p class="car-information">
@@ -160,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         interação tátil. Garantindo a compatibilidade e eficiência em suas respectivas
                         plataformas
                     </p>
-                    <!-- <button onclick="window.location.href='dev-desktop-mobile.html'" class="information">
+                    <!-- <button onclick="window.location.href='./html/dev-desktop-mobile.html'" class="information">
                     Saiba Mais
                     </button> -->
                 </div>
@@ -168,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="item">
                 <div class="car-img">
-                    <img src="./img/DSC00112.png" alt="imagem">
+                    <img src="./assets/images/img/DSC00112.png" alt="imagem">
                 </div>
                 <div class="content">
                     <p class="car-information">
@@ -186,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         recuperar dados após um
                         incidente, ajudando a entender a origem e o impacto do ataque
                     </p>
-                    <!-- <button onclick="window.location.href='cyber-security.html'" class="information">
+                    <!-- <button onclick="window.location.href='./html/cyber-security.html'" class="information">
                     Saiba Mais
                     </button> -->
                 </div>
@@ -194,7 +192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <div class="item">
                 <div class="car-img">
-                    <img src="./img/minha_foto.png" alt="imagem">
+                    <img src="./assets/images/img/minha_foto.png" alt="imagem">
                 </div>
                 <div class="content">
                     <p class="car-information">
@@ -220,29 +218,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="arrows">
-            <button id="prev"><img src="./img/arrow.png" alt="seta esquerda"></button>
-            <button id="next"><img src="./img/arrow.png" alt="seta direita"></button>
+            <button id="prev"><img src="./assets/images/img/arrow.png" alt="seta esquerda"></button>
+            <button id="next"><img src="./assets/images/img/arrow.png" alt="seta direita"></button>
         </div>
 
         <div class="indicators">
             <div class="number">01</div>
             <ul>
-                <li class="active"><a rel="canonical" href="dev-web-fullstack.html" class="axt ">Web Full</a></li>
-                <li><a rel="canonical" href="dev-desktop-mobile.html" class="axt">Desk Mob</a></li>
-                <li><a rel="canonical" href="cyber-security.html" class="axt">Blue Team</a></li>
-                <li><a rel="canonical" href="cyber-security.html" class="axt">Red Team</a></li>
+                <li class="active"><a rel="canonical" href="./html/dev-web-fullstack.html" class="axt">Web<br>Full</a></li>
+                <li><a rel="canonical" href="./html/dev-desktop-mobile.html" class="axt">Desk<br>Mob</a></li>
+                <li><a rel="canonical" href="./html/cyber-security.html" class="axt">Blue<br>Team</a></li>
+                <li><a rel="canonical" href="./html/cyber-security.html" class="axt">Red<br>Team</a></li>
 
             </ul>
         </div>
     </section>
 
-    <div class="qrcode-s"><img src="./imgpg/meu_site_qrcode.png"  alt="qrcode-site" class="qrcode-site"></div>
+    <div class="qrcode-s"><img src="./assets/images/imgpg/meu_site_qrcode.png"  alt="qrcode-site" class="qrcode-site"></div>
 
     <section class="container2" id="container2">
         <div class="list2">
 
             <div class="list-item">
-                <img src="./img2/img1.webp" alt="foto-parrot">
+                <img src="./assets/images/img2/img1.webp" alt="foto-parrot">
                 <div class="content2">
                 <h2 class="title">CyberSecurity - Blue Team</h2>
                     <p class="description">Um desenvolvedor fullstack de aplicativos desktop e mobile é um profissional
@@ -255,13 +253,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         robustos e escaláveis, que
                         funcionam perfeitamente em dispositivos móveis e computadores</p>
                     <div class="buttons">
-                       <button onclick="window.location.href='cyber-security.html'"> Saiba Mais</button>
+                       <button onclick="window.location.href='./html/cyber-security.html'"> Saiba Mais</button>
                     </div>
                 </div>
             </div>
 
             <div class="list-item">
-                <img src="./img2/img2.jpg" alt="foto-tecnologias">
+                <img src="./assets/images/img2/img2.jpg" alt="foto-tecnologias">
                 <div class=" content2">
                     <h2 class="title">Dev App Desktop & Mobile</h2>
                     <p class="description">A cibersegurança é a prática de proteger sistemas de computador, redes,
@@ -274,13 +272,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         quanto organizações contra
                         perdas financeiras e danos à reputação</p>
                     <div class="buttons">          
-                        <button onclick="window.location.href='dev-desktop-mobile.html'"> Saiba Mais</button>
+                        <button onclick="window.location.href='./html/dev-desktop-mobile.html'"> Saiba Mais</button>
                     </div>
                 </div>
             </div>
 
             <div class="list-item">
-                <img src="./img2/img3.jpg" alt="foto-kali-linux">
+                <img src="./assets/images/img2/img3.jpg" alt="foto-kali-linux">
                 <div class=" content2">
                     <h2 class="title">Étical Hacker - Red Team</h2>
                     <p class="description">Um ethical hacker, também conhecido como pentester, é um profissional
@@ -293,13 +291,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         abordagem proativa, os ethical
                         hackers são essenciais para a proteção dos dados e a integridade dos sistemas</p>
                     <div class="buttons">
-                        <button onclick="window.location.href='cyber-security.html'"> Saiba Mais</button>
+                        <button onclick="window.location.href='./html/cyber-security.html'"> Saiba Mais</button>
                     </div>
                 </div>
             </div>
 
             <div class="list-item">
-                <img src="./img2/img4.jpg" alt="foto-desenhos">
+                <img src="./assets/images/img2/img4.jpg" alt="foto-desenhos">
                 <div class=" content2">
                     <br>
                     <h2 class="title">Dev Web FullStack</h2>
@@ -311,24 +309,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         escaláveis.
                         </p>
                     <div class="buttons">
-                        <button onclick="window.location.href='dev-web-fullstack.html'"> Saiba Mais</button>
+                        <button onclick="window.location.href='./html/dev-web-fullstack.html'"> Saiba Mais</button>
                     </div>
                 </div>
             </div>
 
             <div class="arrows2">
-                <button class="back2">
-                    < </button>
-            </div>
-
-            <div class="arrows21">
-                <button class="next2"> > </button>
+                <button class="back2" type="button" aria-label="Item anterior">&lt;</button>
+                <button class="next2" type="button" aria-label="Próximo item">&gt;</button>
             </div>
         </div>
 
         <div class="thumb">
             <div class="thumb-item">
-                <img src="./img2/img1.webp" alt="foto-parrot">
+                <img src="./assets/images/img2/img1.webp" alt="foto-parrot">
                 <div class="content2">
                     <h3>Cyber Security</h3>
                     <p>Saiba Mais</p>
@@ -336,7 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="thumb-item">
-                <img src="./img2/img2.jpg" alt="foto-tecnologias">
+                <img src="./assets/images/img2/img2.jpg" alt="foto-tecnologias">
                 <div class="content2">
                     <h3>Desktop & Mobile</h3>
                     <p>Saiba Mais</p>
@@ -344,7 +338,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="thumb-item">
-                <img src="./img2/img3.jpg" alt="foto-kali-linux">
+                <img src="./assets/images/img2/img3.jpg" alt="foto-kali-linux">
                 <div class="content2">
                     <h3>Pentester</h3>
                     <p>Saiba Mais</p>
@@ -352,7 +346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="thumb-item">
-                <img src="./img2/img4.jpg" alt="foto-desenhos">
+                <img src="./assets/images/img2/img4.jpg" alt="foto-desenhos">
                 <div class="content2">
                     <h3>Dev Web</h3>
                     <p>Saiba Mais</p>
@@ -604,7 +598,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <details class="question-text">
                     <summary class="question">
                         Como pagar? Métodos de pagamento? &darr;
-                        </strong>
                     </summary>
 
                     <ol class="question-list">
@@ -654,28 +647,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </section>
 
-    <h2 class="message-title">Postagens dos Visitantes</h2>
+    <!-- Postagens dos Visitantes -->
+    <section class="postagens" id="postagens">
+        <div class="postagens-cabecalho">
+            <span class="postagens-eyebrow">Mural de recados</span>
+            <h2 class="message-title">Postagens dos Visitantes</h2>
+            <p class="postagens-subtitulo">O que quem passou por aqui deixou registrado</p>
+        </div>
 
-    <!-- Div onde as mensagens enviadas serão exibidas -->
-    <div id="listaMensagens"></div>
-    <a rel="canonical" href="login.html" class="mensagens-btn2">Postar Mensagens</a><br /><br />
+        <div id="listaMensagens"></div>
+
+        <div class="postagens-acao">
+            <a rel="canonical" href="./html/login.html" class="mensagens-btn2">Postar Mensagem</a>
+        </div>
+    </section>
 
     <!-- Pagamentos -->
     <section class="pagamentos-section" id="pagamentos-pix" >
         <div class="pagamentos-container">
             <div class="pagamento-container-esquerdo">
                 <h1>Pagar com <br> Pix</h1>
-                <img class="pagamento-img-esquerda" src="imgpg/pix-picpay.png" alt="qrcode-Pagamento-pix">
+                <img class="pagamento-img-esquerda" src="./assets/images/imgpg/pix-picpay.png" alt="qrcode-Pagamento-pix">
                 <h4>41e15c1e-e784-45f6-92f7-8b397686b5cd</h4>
             </div>
         <div class="pagamento-container-direito" id="pagamentos-btc">
             <h1>Pagar com <br> Bitcoin</h1>
-            <img class="pagamento-img-cripto" src="imgpg/btc.png" alt="qrcode-Pagamento-btc">
+            <img class="pagamento-img-cripto" src="./assets/images/imgpg/btc.png" alt="qrcode-Pagamento-btc">
             <h4>bc1qqm8hllrvt3ve8n8nwtp6s8f85vnjazl33ze6vh</h4>
         </div>
         <div class="pagamento-container-direito" id="pagamentos-eth">
             <h1>Pagar com <br> ETH </h1>
-            <img class="pagamento-img-cripto" src="imgpg/eth.png" alt="qrcode-Pagamento-btc">
+            <img class="pagamento-img-cripto" src="./assets/images/imgpg/eth.png" alt="qrcode-Pagamento-btc">
             <h4>0xbEccfd3AEb196D11a3c91c5D5aEC42cbf4d4B908</h4>
         </div>
     </div>
@@ -696,20 +698,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </form>
 
             <aside class="contact-image">
-                <img src="./img3/central-atendimento.webp" class="contact-img" alt="contato" />
+                <img src="./assets/images/img3/central-atendimento.webp" class="contact-img" alt="contato" />
             </aside>
 
         </div>
     </section>
 
     <div class="area-content">
-        <a href="./app-release.apk" download="app-release.apk" onclick="baixarApk(event)">
-            <img src="./img/android.png" alt="Baixar aplicativo Android" class="android-image" width="60">
+        <a href="./downloads/app-release.apk" download="app-release.apk" onclick="baixarApk(event)">
+            <img src="./assets/images/img/android.png" alt="Baixar aplicativo Android" class="android-image" width="60">
         </a>
     </div>
 
     <div class="whatsapp-content">
-        <a href="https://wa.me/13982237027?text=Quero%20contratar!"><img src="./img/whatsapp.png" alt="whatsapp-image" class="whatsapp-contato-image" width="60"></a>
+        <a href="https://wa.me/13982237027?text=Quero%20contratar!"><img src="./assets/images/img/whatsapp.png" alt="whatsapp-image" class="whatsapp-contato-image" width="60"></a>
     </div>
 
     <!-- footer-->
@@ -755,11 +757,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h3>Recursos</h3>
                     <ul>
                         <li>Politica de Privacidade</li>
-                        <li><a rel="canonical" href="lei_geral_lgpd.html" class="termos1e2">Termo de Uso</a></li>
+                        <li><a rel="canonical" href="./html/lei_geral_lgpd.html" class="termos1e2">Termo de Uso</a></li>
                     </ul>
                     <ul>
                         <li>Lei Geral da Proteção de Dados</li>
-                        <li><a rel="canonical" href="lei_geral_lgpd.html" class="termos1e2">Termo de Uso Da LGPD</a>
+                        <li><a rel="canonical" href="./html/lei_geral_lgpd.html" class="termos1e2">Termo de Uso Da LGPD</a>
                         </li>
                     </ul>
                 </article>
@@ -767,9 +769,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <article class="footer-social">
 
-                <a href="/" class="footer-logo">
+                <a href="./index.html" class="footer-logo">
                     <h4 class="footer-title">Contato</h4>
-                    <img class="img-footer" src="img/logo.png" alt="logo" height="45" width="45" />
+                    <img class="img-footer" src="./assets/images/img/logo.png" alt="logo" height="45" width="45" />
                     <span>
                         Developer
                         <p>& CyberSecurity</p>
@@ -807,24 +809,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="copyright">
             &copy; 2025 Alexsandro A. Arantes. Todos os direitos reservados.
         </div>
-        </div>
     </footer>
 
-</body>   
-    <script src="./page-guard.js"></script> 
-    <script src="https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js"></script>
+    <script src="./js/page-guard.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-    <script src="./firebase-init.js"></script> 
-    <script src="./mensagens2.js" defer></script>
-    <script src="./pages/home/home.js" defer></script>
+    <script src="./js/firebase-init.js"></script> 
+    <script src="./js/mensagens2.js?v=2"></script>
     
 
-    <script src="./script.js" defer></script>
-    <script src="./scriptcar.js" defer></script>
-    <script src="./scripts2.js" defer></script>
-    <script src="./scripts3.js" defer></script>
-    <script src="./script10.js" defer></script>
+    <script src="./js/script.js?v=13" defer></script>
+    <script src="./js/scriptcar.js?v=5" defer></script>
+    <script src="./js/scripts2.js?v=5" defer></script>
+    <script src="./js/scripts3.js?v=5" defer></script>
      
     
+</body>
 </html>

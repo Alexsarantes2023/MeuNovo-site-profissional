@@ -1,0 +1,31 @@
+/* Componente compartilhado da lista de mensagens
+   Usado por: index.html e html/pages/home/home.html */
+.mensagem-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.mensagem-item span {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  flex: 1;
+  margin-right: 15px;
+  display: block;
+  max-width: calc(100% - 120px);
+}
+
+@media (max-width: 600px) {
+  .mensagem-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mensagem-item span {
+    max-width: calc(100% - 90px);
+    margin-right: 10px;
+  }
+}

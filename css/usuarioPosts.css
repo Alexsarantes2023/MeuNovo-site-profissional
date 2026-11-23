@@ -1,0 +1,132 @@
+.header2 { 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0px;
+  position: fixed;
+  top: 0;
+  background: #333;
+  z-index: 5;
+}
+
+/* Email do usuário */
+#usuarioInfo {
+  color: white;                   /* Texto branco */
+  font-weight: 900;               /* Texto bem negrito */
+  font-size: 18px;                /* Tamanho da fonte */
+  margin-left: 20px;              /* Espaço à esquerda */
+}
+
+/* Botão "Sair/Login" */
+#logoutBtn { 
+  background: transparent;
+  color: #fff;
+  border: 1px solid #ff4d4d;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 16px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+#logoutBtn:hover {
+  background: #e60000;            /* Fundo vermelho mais escuro ao passar o mouse */
+}
+
+.message-title {
+  text-align: center;             /* Centraliza o título */
+  margin-top: 26px;              /* Espaço acima do título (considerando o header fixo) */
+  font-size: 24px;                /* Tamanho da fonte do título */
+  color: white;                  /* Cor do texto do título */
+}
+
+/* Lista de mensagens */
+#listaMensagens {
+  display: flex;                  /* Layout flexível */
+  flex-direction: column;         /* Itens empilhados verticalmente */
+  margin: 30px auto;
+  margin-bottom: 50px;              /* Espaço abaixo do título */   
+  padding: 20px;        
+  width: 800px;                   /* Largura padrão */
+  max-width: 95%;                 /* Ajusta em telas menores */
+  color: #333;                  /* Cor do texto */
+  background: #fff;               /* Fundo branco */
+             
+  border-radius: 8px;             /* Cantos arredondados */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Sombra leve */
+  box-sizing: border-box;         /* Inclui padding/borda no cálculo da largura */
+  height: 500px;                    /* Metade da altura do contêiner pai */
+  overflow-y: auto;               /* Rolagem vertical quando necessário */
+}
+.mensagens-btn2 {
+    width: 70%;
+    display: block;
+    background: var(--button);
+    padding: 0.8rem 1.5rem;
+    color: var(--white);
+    font-size: var(--font-size-small);
+    font-family: var(--font-body);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    margin: 3rem auto 1rem;
+    text-decoration: none;
+}
+#email {
+  margin-left: 8px; /* ou o valor que preferir */
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+   #listaMensagens {
+    width: 90%;                   /* Ajusta largura */
+    padding: 20px;                /* Reduz espaçamento interno */
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  #listaMensagens {
+    width: 100%;                  /* Ocupa toda a largura */
+    padding: 15px;                /* Espaçamento menor */
+    margin: 0 10px 40px;               /* Margem lateral */
+  }
+
+  .message-title {
+  text-align: center;             /* Centraliza o título */
+  margin-top: 26px;
+  margin-bottom: 30px;            /* Espaço abaixo do título */
+  font-size: 24px;                /* Tamanho da fonte do título */
+  color: white;                  /* Cor do texto do título */
+  }
+  /* Botão "Sair/Login" */
+  #logoutBtn {
+    font-size: 13px;
+    padding: 5px 12px;
+    margin-right: 10px;
+  }
+
+  #usuarioInfo {
+    flex: 1;
+    font-size: 12px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+
+
+
+
+
+
+
+
