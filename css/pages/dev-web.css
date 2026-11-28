@@ -508,3 +508,80 @@ body {
         margin-top: 0.9rem;
     }
 }
+
+/* ---------- Prova de configuracao do Google Analytics ---------- */
+.dev-ga-prova {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1.4rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(150deg, rgba(52, 211, 153, 0.09), rgba(255, 255, 255, 0.02));
+}
+
+.dev-ga-prova-texto {
+    max-width: 540px;
+}
+
+.dev-ga-ativo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #34d399;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.dev-ga-prova-texto p {
+    margin: 0.6rem 0 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.dev-ga-ids {
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+    gap: 0.7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dev-ga-ids li {
+    padding: 0.55rem 0.9rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.dev-ga-ids span {
+    display: block;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.64rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.dev-ga-ids strong {
+    display: block;
+    margin-top: 0.2rem;
+    color: #a5f3fc;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .dev-ga-prova {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+}
