@@ -28,10 +28,10 @@
 /* ---------- Celulares e notebook reais (mockups com as telas dos apps) ---------- */
 .dev-showcase {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.6rem 0 3.5rem;
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+    aspect-ratio: 470 / 340;
 }
 
 .dev-showcase::before {
@@ -47,12 +47,14 @@
     background: radial-gradient(circle, rgba(34, 211, 238, 0.22), rgba(37, 99, 235, 0.12) 42%, transparent 70%);
 }
 
-/* Notebook (fica abaixo dos celulares) */
+/* Notebook (base da composicao) */
 .dev-laptop {
-    position: relative;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     z-index: 1;
-    width: 430px;
-    margin: 16px 0 0;
+    width: 100%;
+    margin: 0;
 }
 
 .dev-laptop__tela {
@@ -117,11 +119,9 @@
 }
 
 .dev-phones {
-    position: relative;
+    position: absolute;
+    inset: 0;
     z-index: 2;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
 }
 
 /* Estrutura: corpo com moldura metalica + tela arredondada */
@@ -183,29 +183,42 @@
     background-position: calc(-1.2cqw) 14%, calc(-1.2cqw) 23%, calc(100% + 1.2cqw) 22%;
 }
 
-/* Hero */
+/* Hero: celulares pequenos, sobrepostos apenas no lado direito do notebook */
+.dev-phones .dev-device {
+    position: absolute;
+}
+
 .dev-device--frente {
-    width: 236px;
-    margin-left: -56px;
+    right: 0;
+    bottom: 0;
+    width: 30%;
     z-index: 2;
 }
 
 .dev-device--traseiro {
-    width: 194px;
-    transform: translateY(32px) rotate(-4deg);
+    right: 26%;
+    bottom: 6%;
+    width: 23%;
+    transform: rotate(-4deg);
     z-index: 1;
 }
 
 /* Selos flutuantes */
 .dev-showcase-badges {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
     pointer-events: none;
 }
 
 .dev-tech-badge {
-    position: absolute;
+    position: static;
     padding: 0.35rem 0.7rem;
     border-radius: 999px;
     border: 1px solid rgba(103, 232, 249, 0.35);
@@ -217,95 +230,68 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
-.dev-tech-badge--electron {
-    top: 78%;
-    left: -1rem;
+/* ---------- Entrada dos dispositivos ao carregar a pagina ---------- */
+@keyframes dev-laptop-in {
+    from {
+        opacity: 0;
+        transform: translateY(46px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
-.dev-tech-badge--rn {
-    top: 28%;
-    left: -0.5rem;
+@keyframes dev-phone-in {
+    from {
+        opacity: 0;
+        transform: translateY(34px) scale(1.22);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
-.dev-tech-badge--kotlin {
-    top: 34%;
-    right: -0.5rem;
+@keyframes dev-badge-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
-.dev-tech-badge--firebase {
-    top: 78%;
-    right: -1rem;
+/* 1) notebook entra primeiro */
+.dev-laptop {
+    animation: dev-laptop-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
-/* ---------- Entrada dos dispositivos no scroll ---------- */
-/* Anula o deslocamento vertical do container para os filhos animarem sozinhos */
-.dev-hero-visual.animar-dev {
-    transform: none;
+/* 2) depois os celulares, encolhendo ate o tamanho final */
+.dev-phones .dev-device--traseiro .dev-device__corpo {
+    animation: dev-phone-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.75s both;
 }
 
-.dev-hero-visual .dev-laptop,
-.dev-hero-visual .dev-phones .dev-device__corpo,
-.dev-hero-visual .dev-tech-badge {
-    transition:
-        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-        opacity 0.75s ease;
+.dev-phones .dev-device--frente .dev-device__corpo {
+    animation: dev-phone-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.95s both;
 }
 
-/* Antes de entrar na tela: esquerda, direita e de baixo para cima */
-.dev-hero-visual.animar-dev .dev-device--traseiro .dev-device__corpo {
-    opacity: 0;
-    transform: translateX(-120px) translateY(18px) rotate(-6deg);
-}
-
-.dev-hero-visual.animar-dev .dev-device--frente .dev-device__corpo {
-    opacity: 0;
-    transform: translateX(120px) translateY(18px) rotate(5deg);
-}
-
-.dev-hero-visual.animar-dev .dev-laptop {
-    opacity: 0;
-    transform: translateY(90px);
-}
-
-.dev-hero-visual.animar-dev .dev-tech-badge {
-    opacity: 0;
-    transform: translateY(16px) scale(0.92);
-}
-
-/* Na tela: tudo volta ao lugar */
-.dev-hero-visual.animar-dev.visivel .dev-device--traseiro .dev-device__corpo,
-.dev-hero-visual.animar-dev.visivel .dev-device--frente .dev-device__corpo,
-.dev-hero-visual.animar-dev.visivel .dev-laptop,
-.dev-hero-visual.animar-dev.visivel .dev-tech-badge {
-    opacity: 1;
-    transform: none;
-}
-
-/* Escalonamento da entrada */
-.dev-hero-visual.animar-dev.visivel .dev-laptop {
-    transition-delay: 0.05s;
-}
-
-.dev-hero-visual.animar-dev.visivel .dev-device--traseiro .dev-device__corpo {
-    transition-delay: 0.15s;
-}
-
-.dev-hero-visual.animar-dev.visivel .dev-device--frente .dev-device__corpo {
-    transition-delay: 0.27s;
-}
-
-.dev-hero-visual.animar-dev.visivel .dev-tech-badge {
-    transition-delay: 0.55s;
+/* 3) por ultimo os selos */
+.dev-tech-badge {
+    animation: dev-badge-in 0.7s ease 1.55s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
 
-    .dev-hero-visual.animar-dev .dev-laptop,
-    .dev-hero-visual.animar-dev .dev-phones .dev-device__corpo,
-    .dev-hero-visual.animar-dev .dev-tech-badge {
-        opacity: 1;
-        transform: none;
-        transition: none;
+    .dev-laptop,
+    .dev-phones .dev-device__corpo,
+    .dev-tech-badge {
+        animation: none;
     }
 }
 
@@ -523,20 +509,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .dev-laptop {
-        width: min(88vw, 400px);
-    }
-
-    .dev-device--frente {
-        width: min(52vw, 224px);
-    }
-
-    .dev-device--traseiro {
-        width: min(42vw, 184px);
-        margin-left: -44px;
-        transform: translateY(26px) rotate(-4deg);
-    }
-
     .dev-app-topo {
         flex-direction: column;
         align-items: flex-start;
@@ -583,52 +555,9 @@
 }
 
 @media (max-width: 600px) {
-    .dev-showcase {
-        padding: 1.2rem 0 2.5rem;
-    }
-
-    .dev-laptop {
-        width: min(94vw, 360px);
-        margin-top: 12px;
-    }
-
-    .dev-device--frente {
-        width: min(50vw, 206px);
-        margin-left: -38px;
-    }
-
-    .dev-device--traseiro {
-        width: min(40vw, 166px);
-        transform: translateY(20px) rotate(-4deg);
-    }
-
-    /* Deslocamentos menores na entrada para nao invadir o texto */
-    .dev-hero-visual.animar-dev .dev-device--traseiro .dev-device__corpo {
-        transform: translateX(-64px) translateY(14px) rotate(-5deg);
-    }
-
-    .dev-hero-visual.animar-dev .dev-device--frente .dev-device__corpo {
-        transform: translateX(64px) translateY(14px) rotate(4deg);
-    }
-
-    .dev-hero-visual.animar-dev .dev-laptop {
-        transform: translateY(60px);
-    }
-
-    .dev-showcase-badges {
-        position: static;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
-        width: 100%;
-        margin-top: 1.6rem;
-    }
-
     .dev-tech-badge {
-        position: static;
-        font-size: 0.66rem;
-        padding: 0.28rem 0.6rem;
+        font-size: 0.62rem;
+        padding: 0.26rem 0.55rem;
     }
 
     .dev-passos {
