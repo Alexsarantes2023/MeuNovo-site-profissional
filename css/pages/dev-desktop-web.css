@@ -25,145 +25,184 @@
     background: linear-gradient(135deg, #0891b2, #2563eb);
 }
 
-/* ---------- Vitrine de dispositivos ---------- */
-.dev-devices {
+/* ---------- Celulares e notebook reais (mockups com as telas dos apps) ---------- */
+.dev-showcase {
     position: relative;
-    padding: 1.5rem 0 3rem;
-}
-
-.dev-laptop {
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background: linear-gradient(160deg, #10202b, #0a121c);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-}
-
-.dev-laptop-topo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.4rem;
-    padding: 0.65rem 0.9rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.6rem 0 3.5rem;
 }
 
-.dev-laptop-topo span {
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #ff5f57;
-}
-
-.dev-laptop-topo span:nth-child(2) {
-    background: #febc2e;
-}
-
-.dev-laptop-topo span:nth-child(3) {
-    background: #28c840;
-}
-
-.dev-laptop-topo em {
-    margin-left: auto;
-    color: rgba(255, 255, 255, 0.45);
-    font-size: 0.7rem;
-    font-style: normal;
-}
-
-.dev-laptop-tela {
-    display: flex;
-    gap: 0.7rem;
-    min-height: 230px;
-    padding: 1rem;
-    background: radial-gradient(120% 120% at 80% 0%, rgba(34, 211, 238, 0.12), transparent 60%);
-}
-
-.dev-ui-side {
-    width: 56px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.06);
-}
-
-.dev-ui-main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 0.55rem;
-}
-
-.dev-ui-linha {
-    display: block;
-    height: 9px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.dev-ui-linha--grande {
-    width: 70%;
-    height: 13px;
-    background: rgba(103, 232, 249, 0.45);
-}
-
-.dev-ui-linha--curta {
-    width: 45%;
-}
-
-.dev-ui-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    margin: 0.3rem 0;
-}
-
-.dev-ui-cards i {
-    display: block;
-    height: 54px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.dev-phone {
+.dev-showcase::before {
+    content: "";
     position: absolute;
-    right: -6px;
-    bottom: 0;
-    width: 130px;
-    height: 250px;
-    padding: 10px;
-    border-radius: 24px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    background: linear-gradient(170deg, #0e1b26, #081019);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
-}
-
-.dev-phone-notch {
-    width: 46px;
-    height: 6px;
-    margin: 0 auto 8px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.dev-phone-tela {
-    display: flex;
-    flex-direction: column;
-    gap: 0.45rem;
-    height: 100%;
-}
-
-.dev-ui-bolinha {
-    width: 56px;
-    height: 56px;
-    margin: 0.3rem auto;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 118%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: linear-gradient(135deg, #0891b2, #2563eb);
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.22), rgba(37, 99, 235, 0.12) 42%, transparent 70%);
 }
 
-.dev-phone-btn {
-    height: 26px;
-    margin-top: auto;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #22d3ee, #2563eb);
+/* Notebook */
+.dev-laptop {
+    position: relative;
+    z-index: 1;
+    width: 430px;
+    margin: 0;
+}
+
+.dev-laptop__tela {
+    position: relative;
+    padding: 9px 9px 14px;
+    border-radius: 15px 15px 5px 5px;
+    background: linear-gradient(160deg, #5a6c80, #1d2836 42%, #0b1118 72%, #38475a);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.16),
+        0 24px 55px rgba(0, 0, 0, 0.5);
+}
+
+/* camera do notebook */
+.dev-laptop__tela::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    width: 3px;
+    height: 3px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: #22303f;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.dev-laptop__tela img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 758 / 388;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 4px;
+    background: #05080c;
+}
+
+/* base/haste do notebook */
+.dev-laptop__base {
+    position: relative;
+    display: block;
+    width: 111%;
+    height: 13px;
+    margin-left: -5.5%;
+    border-radius: 0 0 11px 11px;
+    background: linear-gradient(180deg, #52657a, #1d2836 52%, #0a1017);
+    box-shadow:
+        0 12px 26px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.dev-laptop__base::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 52px;
+    height: 5px;
+    transform: translateX(-50%);
+    border-radius: 0 0 6px 6px;
+    background: #0a1017;
+}
+
+.dev-phones {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -44px;
+}
+
+/* Estrutura: corpo com moldura metalica + tela arredondada */
+.dev-device {
+    position: relative;
+    flex: none;
+    margin: 0;
+    container-type: inline-size;
+}
+
+.dev-device__corpo {
+    position: relative;
+    padding: 3.4cqw;
+    border-radius: 15.4cqw;
+    background: linear-gradient(155deg, #62778d 0%, #223040 18%, #0a1017 52%, #27323f 84%, #6b7f95 100%);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.18),
+        0 24px 55px rgba(0, 0, 0, 0.55),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.dev-device__corpo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12.2cqw;
+    background: #05080c;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Camera frontal (punch-hole) sobre a imagem */
+.dev-device__corpo::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 4.2%;
+    left: 50%;
+    width: 4.2cqw;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #33465c, #04070b 68%);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+/* Botoes laterais (volume e power) */
+.dev-device__corpo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    background-image:
+        linear-gradient(180deg, #55697f, #131c26),
+        linear-gradient(180deg, #55697f, #131c26),
+        linear-gradient(180deg, #55697f, #131c26);
+    background-repeat: no-repeat;
+    background-size: 1.5cqw 7%, 1.5cqw 7%, 1.5cqw 11%;
+    background-position: calc(-1.2cqw) 14%, calc(-1.2cqw) 23%, calc(100% + 1.2cqw) 22%;
+}
+
+/* Hero */
+.dev-device--frente {
+    width: 236px;
+    margin-left: -56px;
+    z-index: 2;
+}
+
+.dev-device--traseiro {
+    width: 194px;
+    transform: translateY(32px) rotate(-4deg);
+    z-index: 1;
+}
+
+/* Selos flutuantes */
+.dev-showcase-badges {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    pointer-events: none;
 }
 
 .dev-tech-badge {
@@ -171,26 +210,168 @@
     padding: 0.35rem 0.7rem;
     border-radius: 999px;
     border: 1px solid rgba(103, 232, 249, 0.35);
-    background: rgba(8, 15, 22, 0.9);
+    background: rgba(8, 15, 22, 0.92);
     color: #a5f3fc;
     font-size: 0.72rem;
     font-weight: 600;
+    white-space: nowrap;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 
 .dev-tech-badge--electron {
-    top: 0.4rem;
-    left: -8px;
+    top: 30%;
+    left: -0.5rem;
 }
 
 .dev-tech-badge--rn {
-    top: 42%;
-    right: -10px;
+    top: 47%;
+    left: -0.5rem;
 }
 
 .dev-tech-badge--kotlin {
-    bottom: -6px;
-    left: 18%;
+    top: 40%;
+    right: -0.5rem;
+}
+
+.dev-tech-badge--firebase {
+    top: 57%;
+    right: -0.5rem;
+}
+
+/* ---------- Secao: apps publicados ---------- */
+.dev-secao-apps .dev-secao-topo {
+    max-width: 720px;
+}
+
+.dev-app + .dev-app {
+    margin-top: 3.5rem;
+    padding-top: 3.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dev-app-topo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1.9rem;
+}
+
+.dev-app-texto {
+    max-width: 640px;
+}
+
+.dev-app-etiqueta {
+    display: inline-block;
+    margin-bottom: 0.55rem;
+    color: #67e8f9;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.dev-app-topo h3 {
+    margin: 0 0 0.55rem;
+    color: #fff;
+    font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+    line-height: 1.2;
+}
+
+.dev-app-topo p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.92rem;
+    line-height: 1.62;
+}
+
+.dev-app-ficha {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.7rem;
+}
+
+.dev-app-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.72rem;
+    line-height: 1.3;
+}
+
+.dev-app-chip i {
+    color: #34d399;
+}
+
+.dev-app-download {
+    padding: 0.62rem 1.25rem;
+    font-size: 0.82rem;
+}
+
+/* Galeria de telas */
+.dev-app-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.6rem 1.1rem;
+}
+
+.dev-device--mini {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.dev-device--mini:hover {
+    transform: translateY(-6px);
+}
+
+.dev-device--mini figcaption {
+    margin-top: 0.75rem;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.76rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+/* Prova: apps instalados no celular */
+.dev-app-prova {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.6rem;
+    margin-top: 3.5rem;
+    padding: 2rem 2.2rem;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(150deg, rgba(34, 211, 238, 0.09), rgba(255, 255, 255, 0.02));
+}
+
+.dev-device--prova {
+    width: 186px;
+}
+
+.dev-app-prova-texto {
+    max-width: 580px;
+}
+
+.dev-app-prova-texto h3 {
+    margin: 0.75rem 0 0.6rem;
+    color: #fff;
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+    line-height: 1.2;
+}
+
+.dev-app-prova-texto p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.92rem;
+    line-height: 1.62;
 }
 
 /* ---------- Servicos numerados ---------- */
@@ -259,21 +440,118 @@
     line-height: 1.5;
 }
 
+/* ---------- Responsivo ---------- */
+@media (max-width: 1023px) {
+    .dev-app-galeria {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 900px) {
     .dev-passos {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .dev-laptop {
+        width: min(88vw, 400px);
+    }
+
+    .dev-phones {
+        margin-top: -66px;
+    }
+
+    .dev-device--frente {
+        width: min(52vw, 224px);
+    }
+
+    .dev-device--traseiro {
+        width: min(42vw, 184px);
+        margin-left: -44px;
+        transform: translateY(26px) rotate(-4deg);
+    }
+
+    .dev-app-topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.3rem;
+    }
+
+    .dev-app-ficha {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .dev-app-prova {
+        flex-direction: column;
+        gap: 1.8rem;
+        padding: 2rem 1.6rem;
+        text-align: center;
+    }
+
+    .dev-device--prova {
+        width: 170px;
+    }
+}
+
+@media (max-width: 639px) {
+    .dev-app-galeria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.3rem 0.9rem;
+    }
+
+    .dev-device--mini figcaption {
+        font-size: 0.7rem;
+    }
+
+    .dev-app-chip {
+        font-size: 0.66rem;
+        padding: 0.35rem 0.65rem;
+    }
+
+    .dev-app-download {
+        font-size: 0.78rem;
+        padding: 0.58rem 1rem;
+    }
 }
 
 @media (max-width: 600px) {
-    .dev-phone {
-        right: -2px;
-        width: 104px;
-        height: 200px;
+    .dev-showcase {
+        padding: 1.2rem 0 2.5rem;
     }
 
-    .dev-tech-badge--rn {
-        right: -2px;
+    .dev-laptop {
+        width: min(94vw, 360px);
+    }
+
+    .dev-phones {
+        margin-top: -54px;
+    }
+
+    .dev-device--frente {
+        width: min(50vw, 206px);
+        margin-left: -38px;
+    }
+
+    .dev-device--traseiro {
+        width: min(40vw, 166px);
+        transform: translateY(20px) rotate(-4deg);
+    }
+
+    .dev-showcase-badges {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1.6rem;
+    }
+
+    .dev-tech-badge {
+        position: static;
+        font-size: 0.66rem;
+        padding: 0.28rem 0.6rem;
     }
 
     .dev-passos {
