@@ -20,8 +20,10 @@ css/
 |-- mensagens.css             # Componente de lista de mensagens (index + home)
 |-- pages/
 |   |-- beneficios.css        # Carrossel da seção "Benefícios" (antigo styles2.css)
-|   |-- dev.css               # Layout das páginas dev-web-fullstack e dev-desktop-mobile (antigo styles7.css)
-|   |-- dev-desktop.css       # Ajustes exclusivos de dev-desktop-mobile (antigo styles8.css)
+|   |-- dev-web.css           # Layout compartilhado das paginas dev-* (carregado pelas duas)
+|   |-- dev-desktop-web.css   # Mockups de celular/notebook, secao de apps e ajustes de dev-desktop-mobile
+|   |-- dev.css               # Legado: nao e carregado por nenhuma pagina
+|   |-- dev-desktop.css       # Legado: nao e carregado por nenhuma pagina
 |   |-- lgpd.css              # Termos de uso/LGPD (antigo styles4.css + base que vinha de index_login.css)
 |   |-- login.css             # Login completo (stylelogin + index_login + global2)
 |   |-- home/home.css         # Página protegida de postagens
@@ -34,8 +36,8 @@ css/
 |---|---|
 | `index.html` | `style.css`, `pages/beneficios.css`, `components.css`, `stylescybersecurity.css`, `usuarioPosts.css`, `mensagens.css` |
 | `html/cyber-security.html` | `usuarioPosts.css`, `stylescybersecurity.css` |
-| `html/dev-web-fullstack.html` | `style.css`, `components.css`, `pages/dev.css`, `usuarioPosts.css`, `stylescybersecurity.css` |
-| `html/dev-desktop-mobile.html` | idem + `pages/dev-desktop.css` |
+| `html/dev-web-fullstack.html` | `style.css`, `usuarioPosts.css`, `stylescybersecurity.css`, `pages/dev-web.css` |
+| `html/dev-desktop-mobile.html` | `style.css`, `usuarioPosts.css`, `stylescybersecurity.css`, `pages/dev-web.css`, `pages/dev-desktop-web.css` |
 | `html/lei_geral_lgpd.html` | `style.css`, `components.css`, `pages/lgpd.css`, `stylescybersecurity.css` |
 | `html/login.html` | `stylescybersecurity.css`, `pages/login.css` |
 | `html/pages/home/home.html` | `global.css`, `pages/home/home.css`, `mensagens.css` |

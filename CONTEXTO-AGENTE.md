@@ -56,9 +56,11 @@ codigo_limpo/
 |   |-- pages/register/        # register.js
 |-- assets/
 |   |-- images/                # Imagens em subpastas por grupo/origem
+|   |   |-- img-apps/          # Telas dos apps Android e do app desktop (mockups)
 |   |-- videos/                # Videos utilizados
 |-- downloads/
-    |-- app-release.apk
+    |-- app-release.apk        # APK do app pessoal (pagina Dev Desktop & Mobile)
+    |-- menezes-mene-v2.apk    # APK de teste do app do Ministerio (93,76 MB)
 ```
 
 `pagamento-pix.html` e `area-secreta.html` nao fazem parte da navegacao da
@@ -87,6 +89,10 @@ reintroduza sem confirmar que voltaram a ser utilizados.
   `downloads/app-release.apk`.
 - Scripts Firebase externos devem continuar carregados antes dos scripts locais
   que usam Firebase.
+- O Google Tag Manager (`GTM-P2W8QTHC`) esta em `index.html` e em
+  `html/dev-web-fullstack.html`: script no `<head>` e `noscript` logo apos
+  `<body>`. Ao replicar para outras paginas, mantenha os dois blocos e a mesma
+  ordem.
 - `robots.txt` aponta para `sitemap.xml`; mantenha os dois coerentes com as
   rotas publicadas.
 
